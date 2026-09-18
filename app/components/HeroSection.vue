@@ -10,17 +10,17 @@ import BaseButton from "~/components/UI/BaseButton.vue";
   <AppHeader />
 
   <main class="relative z-10 grow flex flex-col justify-center max-w-7xl mx-auto px-6 w-full py-12">
-    <h3 class="text-gray-400 text-lg tracking-[0.3em] uppercase mb-8 font-light">Премиальная оптика нового формата</h3>
+    <h1 class="text-gray-400 text-lg tracking-[0.3em] uppercase mb-6 font-light">Премиальная оптика нового формата</h1>
 
-    <h1 class="text-5xl md:text-[4rem] leading-tight uppercase mb-8 max-w-2xl font-light tracking-widest">
+    <h2 class="text-5xl md:text-[4rem] leading-tight uppercase mb-6 max-w-2xl font-light tracking-widest">
       Меняем линзы<br />
       в вашей оправе<br />
       без переплат
-    </h1>
+    </h2>
 
-    <div class="w-16 h-px bg-[#c19d60] mb-8"></div>
+    <div class="w-16 h-px bg-[#c19d60] mb-6"></div>
 
-    <p class="text-gray-300 text-lg leading-normal max-w-md mb-8">
+    <p class="text-gray-300 text-lg leading-normal max-w-md mb-6">
       Изготавливаем линзы по вашему рецепту<br />
       для любых оправ — быстро, точно<br />
       и дешевле сетевых оптик.
