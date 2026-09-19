@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   modules: ["nuxt-svgo"],
   css: ["~/assets/css/main.css"],
+  ssr: true,
 
   vite: {
     plugins: [tailwindcss()],

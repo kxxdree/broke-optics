@@ -3,8 +3,8 @@ const cards: { num: string; title: string; desc: string; image: string }[] = [
   {
     num: "01",
     title: "Антибликовые линзы",
-    desc: "Чистое зрение без\nбликов и отражений",
-    image: "/path-to-lens-1.jpg", // Путь для будущей картинки
+    desc: "Чистое зрение без бликов и отражений",
+    image: "/path-to-lens-1.jpg",
   },
   {
     num: "02",

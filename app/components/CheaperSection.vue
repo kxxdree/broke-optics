@@ -1,5 +1,37 @@
+<script setup lang="ts">
+import CheckIcon from "~/assets/icons/check-icon.svg?component";
+import StoreIcon from "~/assets/icons/store-icon.svg?component";
+import CloseIcon from "~/assets/icons/close-icon.svg?component";
+import AppartmentIcon from "~/assets/icons/apartment-icon.svg?component";
+import PersonIcon from "~/assets/icons/person-icon.svg?component";
+import PointOfSaleIcon from "~/assets/icons/point-of-sale-icon.svg?component";
+import TrendingUpIcon from "~/assets/icons/trending-up-icon.svg?component";
+import ScheduleIcon from "~/assets/icons/schedule-icon.svg?component";
+import SettingsIcon from "~/assets/icons/settings-icon.svg?component";
+import PriorityIcon from "~/assets/icons/priority-icon.svg?component";
+import BalanceIcon from "~/assets/icons/balance-icon.svg?component";
+import BoltIcon from "~/assets/icons/bolt-icon.svg?component";
+import DesktopIcon from "~/assets/icons/desktop-icon.svg?component";
+
+const regularOptics = [
+  { icon: AppartmentIcon, title: "Аренда помещений", desc: "вы платите за их расходы" },
+  { icon: PersonIcon, title: "Персонал и продавцы", desc: "дополнительные наценки" },
+  { icon: PointOfSaleIcon, title: "Витрины и маркетинг", desc: "переплаты за бренд" },
+  { icon: TrendingUpIcon, title: "Наценки", desc: "до 300–500%" },
+  { icon: ScheduleIcon, title: "Долгие сроки", desc: "очереди и сложные процессы" },
+];
+
+const brokeOptics = [
+  { icon: DesktopIcon, title: "Онлайн-формат", desc: "не платим за аренду" },
+  { icon: SettingsIcon, title: "Прямое изготовление", desc: "без лишних звеньев" },
+  { icon: PriorityIcon, title: "Только необходимое", desc: "фокус на качестве линз" },
+  { icon: BalanceIcon, title: "Честная цена", desc: "без скрытых наценок" },
+  { icon: BoltIcon, title: "Быстро", desc: "изготавливаем за 2–5 дней" },
+];
+</script>
+
 <template>
-  <section class="relative w-full bg-[#070707] text-white overflow-hidden pb-12">
+  <section class="relative w-full bg-[#070707] text-white overflow-hidden pb-24">
     <div class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row gap-16 items-stretch relative z-10">
       <div class="w-full lg:w-[45%] flex flex-col pt-10">
         <h2 class="text-5xl md:text-[2rem] leading-tight uppercase mb-6 font-light tracking-widest">
@@ -88,35 +120,3 @@
     </div>
   </section>
 </template>
-
-<script setup lang="ts">
-import CheckIcon from "~/assets/icons/check-icon.svg?component";
-import StoreIcon from "~/assets/icons/store-icon.svg?component";
-import CloseIcon from "~/assets/icons/close-icon.svg?component";
-import AppartmentIcon from "~/assets/icons/apartment-icon.svg?component";
-import PersonIcon from "~/assets/icons/person-icon.svg?component";
-import PointOfSaleIcon from "~/assets/icons/point-of-sale-icon.svg?component";
-import TrendingUpIcon from "~/assets/icons/trending-up-icon.svg?component";
-import ScheduleIcon from "~/assets/icons/schedule-icon.svg?component";
-import SettingsIcon from "~/assets/icons/settings-icon.svg?component";
-import PriorityIcon from "~/assets/icons/priority-icon.svg?component";
-import BalanceIcon from "~/assets/icons/balance-icon.svg?component";
-import BoltIcon from "~/assets/icons/bolt-icon.svg?component";
-import DesktopIcon from "~/assets/icons/desktop-icon.svg?component";
-
-const regularOptics = [
-  { icon: AppartmentIcon, title: "Аренда помещений", desc: "вы платите за их расходы" },
-  { icon: PersonIcon, title: "Персонал и продавцы", desc: "дополнительные наценки" },
-  { icon: PointOfSaleIcon, title: "Витрины и маркетинг", desc: "переплаты за бренд" },
-  { icon: TrendingUpIcon, title: "Наценки", desc: "до 300–500%" },
-  { icon: ScheduleIcon, title: "Долгие сроки", desc: "очереди и сложные процессы" },
-];
-
-const brokeOptics = [
-  { icon: DesktopIcon, title: "Онлайн-формат", desc: "не платим за аренду" },
-  { icon: SettingsIcon, title: "Прямое изготовление", desc: "без лишних звеньев" },
-  { icon: PriorityIcon, title: "Только необходимое", desc: "фокус на качестве линз" },
-  { icon: BalanceIcon, title: "Честная цена", desc: "без скрытых наценок" },
-  { icon: BoltIcon, title: "Быстро", desc: "изготавливаем за 2–5 дней" },
-];
-</script>

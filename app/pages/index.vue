@@ -3,6 +3,7 @@ import AppHeader from "~/components/AppHeader.vue";
 import HeroSection from "~/components/HeroSection.vue";
 import LensesSection from "~/components/LensesSection.vue";
 import CheaperSection from "~/components/CheaperSection.vue";
+import HowItWorksSection from "~/components/HowItWorksSection.vue";
 </script>
 
 <template>
@@ -11,5 +12,6 @@ import CheaperSection from "~/components/CheaperSection.vue";
     <HeroSection />
     <LensesSection />
     <CheaperSection />
+    <HowItWorksSection />
   </div>
 </template>
