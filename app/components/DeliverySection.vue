@@ -1,48 +1,13 @@
 <script setup lang="ts">
-import { h } from "vue";
-
-const TruckIcon = () =>
-  h("svg", { fill: "none", stroke: "currentColor", viewBox: "0 0 24 24" }, [
-    h("path", {
-      "stroke-linecap": "round",
-      "stroke-linejoin": "round",
-      "stroke-width": "1.5",
-      d: "M8 14h-5v-5a2 2 0 0 1 2-2h8m4 0h1a2 2 0 0 1 2 2v5m-15 0a2 2 0 1 0 4 0m11 0a2 2 0 1 0 4 0m-11 0h7",
-    }),
-  ]);
-const BoxIcon = () =>
-  h("svg", { fill: "none", stroke: "currentColor", viewBox: "0 0 24 24" }, [
-    h("path", {
-      "stroke-linecap": "round",
-      "stroke-linejoin": "round",
-      "stroke-width": "1.5",
-      d: "M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z",
-    }),
-    h("path", { "stroke-linecap": "round", "stroke-linejoin": "round", "stroke-width": "1.5", d: "M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12" }),
-  ]);
-const MapPinIcon = () =>
-  h("svg", { fill: "none", stroke: "currentColor", viewBox: "0 0 24 24" }, [
-    h("path", { "stroke-linecap": "round", "stroke-linejoin": "round", "stroke-width": "1.5", d: "M12 21s-7-6-7-11a7 7 0 1 1 14 0c0 5-7 11-7 11z" }),
-    h("circle", { cx: "12", cy: "10", r: "3", "stroke-width": "1.5" }),
-  ]);
-const HeadphonesIcon = () =>
-  h("svg", { fill: "none", stroke: "currentColor", viewBox: "0 0 24 24" }, [
-    h("path", {
-      "stroke-linecap": "round",
-      "stroke-linejoin": "round",
-      "stroke-width": "1.5",
-      d: "M3 18v-6a9 9 0 0 1 18 0v6M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z",
-    }),
-  ]);
-const ShieldIcon = () =>
-  h("svg", { fill: "none", stroke: "currentColor", viewBox: "0 0 24 24" }, [
-    h("path", { "stroke-linecap": "round", "stroke-linejoin": "round", "stroke-width": "1.2", d: "M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" }),
-    h("path", { "stroke-linecap": "round", "stroke-linejoin": "round", "stroke-width": "1.5", d: "M9 12l2 2 4-4" }),
-  ]);
+import BoxIcon from "~/assets/icons/box-icon.svg?component";
+import DeliveryIcon from "~/assets/icons/delivery-icon.svg?component";
+import ShieldIcon from "~/assets/icons/shield-icon.svg?component";
+import HeadphonesIcon from "~/assets/icons/headphones-icon.svg?component";
+import LocationIcon from "~/assets/icons/location-icon.svg?component";
 
 const deliveryFeatures = [
   {
-    icon: TruckIcon,
+    icon: DeliveryIcon,
     title: "Любые службы доставки",
     desc: "СДЭК, Почта России, Авито Доставка",
   },
@@ -52,7 +17,7 @@ const deliveryFeatures = [
     desc: "Специальная упаковка и защита оправы",
   },
   {
-    icon: MapPinIcon,
+    icon: LocationIcon,
     title: "Отслеживание отправления",
     desc: "Вы всегда знаете, где находится ваша посылка",
   },
@@ -90,11 +55,11 @@ const deliveryFeatures = [
             >
               <component :is="feat.icon" class="w-8 h-8 text-[#c19d60] mb-6" />
 
-              <h3 class="text-sm text-white uppercase tracking-widest mb-3 whitespace-pre-line">
+              <h3 class="text-sm text-white font-semibold uppercase tracking-widest mb-3 whitespace-pre-line">
                 {{ feat.title }}
               </h3>
 
-              <p class="text-[0.75rem] text-white/80 leading-relaxed whitespace-pre-line">
+              <p class="text-[0.875rem] text-white/80 leading-relaxed whitespace-pre-line">
                 {{ feat.desc }}
               </p>
             </li>
