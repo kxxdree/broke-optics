@@ -24,7 +24,7 @@ const steps = [
 
         <p class="text-white/80 text-lg leading-relaxed max-w-lg mb-8">Реальные оправы. Настоящие результаты. Премиальное качество в каждой детали</p>
 
-        <BaseButton class="w-fit mt-auto border-white/50 text-white/80"> Смотреть все работы </BaseButton>
+        <BaseButton class="w-fit mt-auto border-white/50 text-white/80 hover:bg-white/80"> Смотреть все работы </BaseButton>
       </div>
 
       <ul class="w-full grid grid-cols-2 md:grid-cols-4 gap-4">

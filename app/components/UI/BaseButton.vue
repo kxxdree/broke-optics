@@ -2,7 +2,7 @@
 
 <template>
   <button
-    class="flex items-center justify-center gap-3 px-8 py-4 border border-[#c19d60] rounded hover:shadow-[0_0_15px_rgba(193,157,96,0.3)] transition-all duration-200 bg-transparent group cursor-pointer"
+    class="shrink-0 flex items-center justify-center w-full lg:w-auto gap-4 px-8 py-5 border border-[#c19d60]/30 text-[#c19d60] text-sm uppercase tracking-widest hover:bg-[#c19d60] hover:text-black hover:border-[#c19d60] transition-all duration-300 rounded group cursor-pointer"
   >
     <slot name="icon"></slot>
     <span class="text-sm tracking-widest uppercase">
