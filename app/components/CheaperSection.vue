@@ -37,7 +37,7 @@ const brokeOptics = [
     ></div>
 
     <div class="max-w-[1920px] mx-auto px-28 flex flex-col lg:flex-row gap-16 items-stretch relative z-10">
-      <div class="w-full lg:w-[60%] flex flex-col pt-10">
+      <div class="w-full lg:w-[60%] flex flex-col">
         <h2 class="text-5xl md:text-[3.5rem] leading uppercase mb-6 font-light tracking-widest">
           Почему<br />
           у нас дешевле
@@ -68,7 +68,7 @@ const brokeOptics = [
         </div>
       </div>
 
-      <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-6 pt-10">
+      <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-6">
         <div class="relative bg-white/2 border border-white/10 rounded pt-16 flex flex-col overflow-visible h-full">
           <div class="absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 rounded-full bg-[#111] border border-white/10 flex items-center justify-center z-20">
             <StoreIcon class="text-white/60 w-10 h-10" />
