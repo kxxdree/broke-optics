@@ -1,6 +1,7 @@
 <template>
   <section class="relative w-full bg-[#070707] text-white overflow-hidden">
-    <div class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row gap-16 items-start relative z-10">
+    <!-- Изменили items-start на items-stretch -->
+    <div class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row gap-16 items-stretch relative z-10">
       <div class="w-full lg:w-[45%] flex flex-col pt-10">
         <h2 class="text-5xl md:text-[4rem] leading-tight uppercase mb-6 font-light tracking-widest">
           Почему<br />
@@ -33,7 +34,8 @@
       </div>
 
       <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-6 pt-10">
-        <div class="relative bg-white/2 border border-white/10 rounded pt-16 flex flex-col overflow-visible">
+        <!-- Добавили h-full -->
+        <div class="relative bg-white/2 border border-white/10 rounded pt-16 flex flex-col overflow-visible h-full">
           <div class="absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 rounded-full bg-[#111] border border-white/10 flex items-center justify-center z-20">
             <StoreIcon class="text-gray-400/60 w-10 h-10" />
           </div>
@@ -51,12 +53,15 @@
                 <div class="text-[11px] text-gray-400 uppercase tracking-widest mb-1">{{ item.title }}</div>
                 <div class="text-[10px] text-gray-600">{{ item.desc }}</div>
               </div>
-              <CloseIcon class="text-gray-400/60 w-5 h-5 shrink-0" />
+              <div class="text-gray-600 text-sm flex-shrink-0 pl-2">
+                <CloseIcon class="text-gray-400/60 w-5 h-5" />
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="relative bg-black border border-[#c19d60] rounded pt-16 flex flex-col overflow-visible shadow-[0_0_30px_rgba(193,157,96,0.05)]">
+        <!-- Добавили h-full -->
+        <div class="relative bg-black border border-[#c19d60] rounded pt-16 flex flex-col overflow-visible shadow-[0_0_30px_rgba(193,157,96,0.05)] h-full">
           <div
             class="absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 rounded-full bg-[#0a0a0a] border border-[#c19d60] flex items-center justify-center z-20"
           >
@@ -76,7 +81,9 @@
                 <div class="text-[11px] text-white uppercase tracking-widest mb-1">{{ item.title }}</div>
                 <div class="text-[10px] text-gray-500">{{ item.desc }}</div>
               </div>
-              <CheckIcon class="text-[#c19d60] w-8 h-8" />
+              <div class="text-[#c19d60] text-sm flex-shrink-0 pl-2">
+                <CheckIcon class="text-[#c19d60] w-6 h-6" />
+              </div>
             </div>
           </div>
         </div>
