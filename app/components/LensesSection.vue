@@ -41,7 +41,7 @@ const cards: { num: string; title: string; desc: string; image: string }[] = [
 
         <div class="w-12 h-px bg-[#c19d60] mb-6"></div>
 
-        <p class="text-gray-300 text-lg leading-normal max-w-lg">
+        <p class="text-white/80 text-lg leading-normal max-w-lg">
           Работаем с любыми оправами — от повседневных до luxury моделей. Подбираем линзы по рецепту и вашим потребностям
         </p>
       </div>
