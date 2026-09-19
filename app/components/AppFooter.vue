@@ -2,30 +2,18 @@
 import TelegramIcon from "~/assets/icons/telegram-icon.svg?component";
 import InstagramIcon from "~/assets/icons/instagram-icon.svg?component";
 import AvitoIcon from "~/assets/icons/avito-icon.svg?component";
-
-import { h } from "vue";
+import PhoneIcon from "~/assets/icons/phone-icon.svg?component";
 
 const infoLinks = ["Что мы делаем", "Почему у нас дешевле", "Как мы работаем", "Примеры работ", "Доставка", "Ответы на вопросы"];
 
 const clientLinks = ["Как отправить оправу", "Гарантия", "Возврат и обмен", "Конфиденциальность"];
-
-const PhoneIcon = () =>
-  h("svg", { fill: "none", stroke: "currentColor", viewBox: "0 0 24 24" }, [
-    h("path", {
-      "stroke-linecap": "round",
-      "stroke-linejoin": "round",
-      "stroke-width": "1.5",
-      d: "M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z",
-    }),
-  ]);
 </script>
 
 <template>
   <footer class="relative w-full overflow-hidden pt-24 pb-8">
-    <!-- Замени bg-[url('...')] на реальный путь к фото -->
-    <div class="absolute bottom-0 right-0 w-150 h-100 z-0 pointer-events-none">
-      <div class="w-full h-full opacity-40 bg-[url('/path-to-footer-glasses.png')] bg-cover bg-bottom-right"></div>
-    </div>
+    <div
+      class="absolute -bottom-48 -right-36 w-137.5 h-137.5 rounded-full bg-[radial-gradient(circle,rgba(255,255,255,0.1)_0%,rgba(255,255,255,0.05)_35%,transparent_90%)] blur-3xl pointer-events-none z-0"
+    ></div>
 
     <div class="max-w-[1920px] mx-auto px-28 relative z-10 flex flex-col">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-20">
@@ -55,8 +43,8 @@ const PhoneIcon = () =>
           </a>
         </div>
 
-        <div class="flex flex-col lg:pl-10 lg:border-l border-white/10">
-          <h4 class="text-white/60 text-[12px] tracking-[0.15em] uppercase mb-8">Контакты</h4>
+        <div class="flex flex-col lg:px-8 lg:border-l border-white/10">
+          <h4 class="text-white/60 text-[1rem] tracking-[0.15em] uppercase mb-8">Контакты</h4>
 
           <div class="flex flex-col gap-6">
             <a href="#" class="flex items-center gap-4 group">
@@ -81,7 +69,7 @@ const PhoneIcon = () =>
 
             <a href="#" class="flex items-center gap-4 group">
               <div class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center group-hover:border-[#c19d60] transition-colors">
-                <AvitoIcon class="w-4 h-4 text-white/60 group-hover:text-[#c19d60]" />
+                <AvitoIcon class="w-4 h-4 group-hover:text-[#c19d60]" />
               </div>
               <div class="flex flex-col">
                 <span class="text-gray-300 text-sm">Avito</span>
@@ -108,8 +96,8 @@ const PhoneIcon = () =>
           </div>
         </div>
 
-        <div class="flex flex-col lg:pl-10 lg:border-l border-white/10">
-          <h4 class="text-white/60 text-[12px] tracking-[0.15em] uppercase mb-8">Информация</h4>
+        <div class="flex flex-col lg:px-8 lg:border-l border-white/10">
+          <h4 class="text-white/60 text-[1rem] tracking-[0.15em] uppercase mb-8">Информация</h4>
           <ul class="flex flex-col gap-5">
             <li v-for="link in infoLinks" :key="link">
               <a href="#" class="text-white/60 text-[0.875rem] hover:text-[#c19d60] transition-colors">{{ link }}</a>
@@ -117,8 +105,8 @@ const PhoneIcon = () =>
           </ul>
         </div>
 
-        <div class="flex flex-col lg:pl-10 lg:border-l border-white/10">
-          <h4 class="text-white/60 text-[12px] tracking-[0.15em] uppercase mb-8">Для клиентов</h4>
+        <div class="flex flex-col lg:px-8 lg:border-l border-white/10">
+          <h4 class="text-white/60 text-[1rem] tracking-[0.15em] uppercase mb-8">Для клиентов</h4>
           <ul class="flex flex-col gap-5">
             <li v-for="link in clientLinks" :key="link">
               <a href="#" class="text-white/60 text-[0.875rem] hover:text-[#c19d60] transition-colors">{{ link }}</a>
