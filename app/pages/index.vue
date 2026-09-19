@@ -10,5 +10,6 @@
     <ExamplesSection />
     <DeliverySection />
     <FAQSection />
+    <AppFooter />
   </div>
 </template>

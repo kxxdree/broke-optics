@@ -54,7 +54,7 @@ const faqs = [
 </script>
 
 <template>
-  <section class="relative w-full overflow-hidden py-24">
+  <section class="relative w-full overflow-hidden py-24 border-b border-white/10">
     <div
       class="absolute -top-48 -left-36 w-137.5 h-137.5 rounded-full bg-[radial-gradient(circle,rgba(255,255,255,0.1)_0%,rgba(255,255,255,0.05)_35%,transparent_90%)] blur-3xl pointer-events-none z-0"
     ></div>
