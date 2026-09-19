@@ -126,7 +126,7 @@ const faqs = [
 
           <a
             href="#"
-            class="w-full md:w-auto shrink-0 flex items-center justify-center gap-3 px-8 py-4 border border-[#c19d60]/30 text-[#c19d60] text-sm uppercase tracking-widest hover:bg-[#c19d60] hover:text-black transition-all duration-300 rounded group"
+            class="md:w-auto shrink-0 flex items-center w-full justify-center gap-3 px-8 py-4 border border-[#c19d60]/30 text-[#c19d60] text-sm uppercase tracking-widest hover:bg-[#c19d60] hover:text-black transition-all duration-300 rounded group"
           >
             Написать в Telegram
             <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
