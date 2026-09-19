@@ -32,9 +32,9 @@ import TelegramIcon from "~/assets/icons/telegram-icon.svg?component";
       </div>
 
       <div class="flex items-center gap-10">
-        <BaseButton>
+        <BaseButton class="text-[#c19d60]">
           <template #icon>
-            <TelegramIcon class="w-5 h-5 text-[#c19d60]" />
+            <TelegramIcon class="w-4.5 h-4.5 text-[#c19d60]" />
           </template>
           Отправить рецепт и фото оправы
         </BaseButton>

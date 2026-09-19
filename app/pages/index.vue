@@ -4,6 +4,7 @@ import HeroSection from "~/components/HeroSection.vue";
 import LensesSection from "~/components/LensesSection.vue";
 import CheaperSection from "~/components/CheaperSection.vue";
 import HowItWorksSection from "~/components/HowItWorksSection.vue";
+import ExamplesSection from "~/components/ExamplesSection.vue";
 </script>
 
 <template>
@@ -13,5 +14,6 @@ import HowItWorksSection from "~/components/HowItWorksSection.vue";
     <LensesSection />
     <CheaperSection />
     <HowItWorksSection />
+    <ExamplesSection />
   </div>
 </template>

@@ -37,7 +37,7 @@ import AvitoIcon from "~/assets/icons/avito-icon.svg?component";
           <span>+7 (999) 999-99-99</span>
         </div>
 
-        <BaseButton>Оставить заявку</BaseButton>
+        <BaseButton class="text-[#c19d60]">Оставить заявку</BaseButton>
       </div>
     </div>
   </header>
