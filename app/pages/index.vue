@@ -9,5 +9,6 @@
     <HowItWorksSection />
     <ExamplesSection />
     <DeliverySection />
+    <FAQSection />
   </div>
 </template>

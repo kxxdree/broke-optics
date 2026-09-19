@@ -30,12 +30,12 @@ const deliveryFeatures = [
 </script>
 
 <template>
-  <section class="relative w-full py-24 overflow-hidden">
+  <section class="relative w-full py-24 overflow-hidden border-b border-white/10">
     <!-- Фоновое изображение (Коробка и очки). 
          Вставь сюда класс bg-[url('...')] с твоей картинкой -->
     <div class="absolute top-0 right-0 z-0 pointer-events-none"></div>
 
-    <div class="max-w-[1920px] mx-auto px-36 relative z-10 flex flex-col gap-16">
+    <div class="max-w-[1920px] mx-auto px-28 relative z-10 flex flex-col gap-16">
       <div class="flex flex-col lg:flex-row gap-16 items-start">
         <div class="w-full flex flex-col">
           <h2 class="text-5xl md:text-[3.5rem] leading uppercase mb-6 font-light tracking-widest">
