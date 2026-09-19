@@ -32,24 +32,15 @@
         </div>
       </div>
 
-      <div class="w-full lg:w-[50%] grid grid-cols-1 md:grid-cols-2 gap-6 pt-10">
+      <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-6 pt-10">
         <div class="relative bg-white/2 border border-white/10 rounded pt-16 flex flex-col overflow-visible">
-          <div
-            class="absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 rounded-full bg-[#111] border border-white/10 flex items-center justify-center z-20 shadow-[0_0_15px_rgba(0,0,0,0.5)]"
-          >
-            <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.5"
-                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1v1H9V7zm5 0h1v1h-1V7zm-5 4h1v1H9v-1zm5 0h1v1h-1v-1zm-3 4H2v5h20v-5h-9z"
-              />
-            </svg>
+          <div class="absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 rounded-full bg-[#111] border border-white/10 flex items-center justify-center z-20">
+            <StoreIcon class="text-gray-400/60 w-10 h-10" />
           </div>
 
           <div class="absolute top-0 left-0 right-0 h-32 bg-linear-to-b from-white/5 to-transparent z-0 rounded-t pointer-events-none"></div>
 
-          <h3 class="text-center text-gray-500 uppercase tracking-[0.15em] text-sm mb-6 relative z-10">Обычная оптика</h3>
+          <h3 class="text-center text-gray-500 uppercase tracking-[0.15em] text-md mb-6 relative z-10">Обычная оптика</h3>
 
           <div class="px-6 pb-6 relative z-10">
             <div v-for="(item, index) in regularOptics" :key="index" class="flex items-center py-4 border-b border-white/5 last:border-b-0">
@@ -60,21 +51,21 @@
                 <div class="text-[11px] text-gray-400 uppercase tracking-widest mb-1">{{ item.title }}</div>
                 <div class="text-[10px] text-gray-600">{{ item.desc }}</div>
               </div>
-              <div class="text-gray-600 text-sm shrink-0 pl-2">✕</div>
+              <CloseIcon class="text-gray-400/60 w-5 h-5 shrink-0" />
             </div>
           </div>
         </div>
 
         <div class="relative bg-black border border-[#c19d60] rounded pt-16 flex flex-col overflow-visible shadow-[0_0_30px_rgba(193,157,96,0.05)]">
           <div
-            class="absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 rounded-full bg-[#0a0a0a] border border-[#c19d60] flex items-center justify-center z-20 shadow-[0_0_20px_rgba(193,157,96,0.2)]"
+            class="absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 rounded-full bg-[#0a0a0a] border border-[#c19d60] flex items-center justify-center z-20"
           >
-            <div class="w-8 h-8 flex items-center justify-center text-[#c19d60] text-xs font-serif">B</div>
+            <div class="w-8 h-8 flex items-center justify-center text-[#c19d60] text-3xl font-serif">B</div>
           </div>
 
           <div class="absolute top-0 left-0 right-0 h-32 bg-linear-to-b from-[#c19d60]/10 to-transparent z-0 rounded-t pointer-events-none"></div>
 
-          <h3 class="text-center text-[#c19d60] uppercase tracking-[0.15em] text-sm mb-6 relative z-10">Broke Optics</h3>
+          <h3 class="text-center text-[#c19d60] uppercase tracking-[0.15em] text-md mb-6 relative z-10">Broke Optics</h3>
 
           <div class="px-6 pb-6 relative z-10">
             <div v-for="(item, index) in brokeOptics" :key="index" class="flex items-center py-4 border-b border-white/5 last:border-b-0">
@@ -85,7 +76,7 @@
                 <div class="text-[11px] text-white uppercase tracking-widest mb-1">{{ item.title }}</div>
                 <div class="text-[10px] text-gray-500">{{ item.desc }}</div>
               </div>
-              <div class="text-[#c19d60] text-sm shrink-0 pl-2">✓</div>
+              <CheckIcon class="text-[#c19d60] w-8 h-8" />
             </div>
           </div>
         </div>
@@ -94,7 +85,11 @@
   </section>
 </template>
 
-<script setup>
+<script setup lang="ts">
+import CheckIcon from "~/assets/icons/check-icon.svg?component";
+import StoreIcon from "~/assets/icons/store-icon.svg?component";
+import CloseIcon from "~/assets/icons/close-icon.svg?component";
+
 import { h } from "vue";
 
 const IconBuilding = () =>
@@ -170,7 +165,6 @@ const IconLightning = () =>
     h("path", { "stroke-linecap": "round", "stroke-linejoin": "round", "stroke-width": "1.5", d: "M13 10V3L4 14h7v7l9-11h-7z" }),
   ]);
 
-// Данные для первой карточки (Обычная оптика)
 const regularOptics = [
   { icon: IconBuilding, title: "Аренда помещений", desc: "вы платите за их расходы" },
   { icon: IconUser, title: "Персонал и продавцы", desc: "дополнительные наценки" },
@@ -179,7 +173,6 @@ const regularOptics = [
   { icon: IconClock, title: "Долгие сроки", desc: "очереди и сложные процессы" },
 ];
 
-// Данные для второй карточки (Broke Optics)
 const brokeOptics = [
   { icon: IconMonitor, title: "Онлайн-формат", desc: "не платим за аренду" },
   { icon: IconCog, title: "Прямое изготовление", desc: "без лишних звеньев" },
