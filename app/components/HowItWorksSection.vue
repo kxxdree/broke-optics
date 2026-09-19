@@ -32,22 +32,20 @@ const steps: { num: string; title: string; desc: string; image: string }[] = [
 
 <template>
   <section class="relative w-full py-12 bg-[#070707] text-white overflow-hidden border-b border-white/5">
-    <div class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row gap-16 items-start relative z-10">
-      <div class="w-full lg:w-[35%] flex flex-col shrink-0 pt-2">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row gap-16 items-stretch relative z-10">
+      <div class="w-[30%] flex flex-col shrink-0 pt-2">
         <h2 class="text-5xl md:text-[3.5rem] leading-[1.1] uppercase mb-6 font-light tracking-widest">Как это<br />работает</h2>
 
         <div class="w-12 h-px bg-[#c19d60] mb-8"></div>
 
-        <p class="text-white/80 text-[1rem] leading-relaxed max-w-[20rem] mb-8">Мы делаем процесс максимальн простым и понятным для вас</p>
+        <p class="text-white/80 text-lg leading-relaxed max-w-[20rem] mb-8">Мы делаем процесс максимально простым и понятным для вас</p>
 
-        <div class="flex items-center gap-8 flex-wrap">
-          <BaseButton>
-            <template #icon>
-              <TelegramIcon class="w-5 h-5 text-[#c19d60]" />
-            </template>
-            Отправить рецепт
-          </BaseButton>
-        </div>
+        <BaseButton class="w-fit mt-auto">
+          <template #icon>
+            <TelegramIcon class="w-5 h-5 text-[#c19d60]" />
+          </template>
+          Отправить рецепт
+        </BaseButton>
       </div>
 
       <ul class="w-full grid grid-cols-4">
@@ -67,7 +65,7 @@ const steps: { num: string; title: string; desc: string; image: string }[] = [
           <h3 class="text-white/80 text-[1rem] leading-snug mb-3 whitespace-pre-line">
             {{ step.title }}
           </h3>
-          <p class="text-white/60 text-[0.75rem] leading-relaxed whitespace-pre-line">
+          <p class="text-white/60 text-[0.875rem] leading-relaxed whitespace-pre-line">
             {{ step.desc }}
           </p>
         </li>
