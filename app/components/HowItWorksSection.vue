@@ -34,7 +34,7 @@ const steps: { num: string; title: string; desc: string; image: string }[] = [
   <section class="relative w-full py-12 bg-[#070707] text-white overflow-hidden border-b border-white/5">
     <div class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row gap-16 items-stretch relative z-10">
       <div class="w-[30%] flex flex-col shrink-0 pt-2">
-        <h2 class="text-5xl md:text-[3.5rem] leading-[1.1] uppercase mb-6 font-light tracking-widest">Как это<br />работает</h2>
+        <h2 class="text-5xl md:text-[4rem] leading-[1.1] uppercase mb-6 font-light tracking-widest">Как это<br />работает</h2>
 
         <div class="w-12 h-px bg-[#c19d60] mb-8"></div>
 
