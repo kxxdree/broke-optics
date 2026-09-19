@@ -31,7 +31,7 @@ const steps: { num: string; title: string; desc: string; image: string }[] = [
 </script>
 
 <template>
-  <section class="relative w-full overflow-hidden pt-36">
+  <section class="relative w-full overflow-hidden py-24 border-b border-white/10">
     <div class="max-w-[1920px] mx-auto px-28 flex flex-col lg:flex-row gap-16 items-stretch relative z-10">
       <div class="w-[35%] flex flex-col shrink-0 pt-2">
         <h2 class="text-5xl md:text-[3.5rem] leading uppercase mb-6 font-light tracking-widest">Как это<br />работает</h2>

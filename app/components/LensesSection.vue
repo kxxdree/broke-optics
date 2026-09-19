@@ -28,7 +28,7 @@ const cards: { num: string; title: string; desc: string; image: string }[] = [
 </script>
 
 <template>
-  <section class="relative w-full overflow-hidden pt-36">
+  <section class="relative w-full overflow-hidden py-24 border-b border-white/10">
     <!-- Заглушка для фонового изображения секции. Замени на свой bg-[url('...')] -->
     <div class="absolute inset-0 z-0 pointer-events-none"></div>
 
