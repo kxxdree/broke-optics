@@ -32,6 +32,10 @@ const brokeOptics = [
 
 <template>
   <section class="relative w-full overflow-hidden py-24 border-b border-white/10">
+    <div
+      class="absolute -top-32 -right-32 w-137.5 h-137.5 rounded-full bg-[radial-gradient(circle,rgba(255,255,255,0.12)_0%,rgba(255,255,255,0.04)_35%,transparent_70%)] blur-2xl pointer-events-none z-0"
+    ></div>
+
     <div class="max-w-[1920px] mx-auto px-28 flex flex-col lg:flex-row gap-16 items-stretch relative z-10">
       <div class="w-full lg:w-[60%] flex flex-col pt-10">
         <h2 class="text-5xl md:text-[3.5rem] leading uppercase mb-6 font-light tracking-widest">
