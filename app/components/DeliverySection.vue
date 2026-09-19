@@ -105,16 +105,16 @@ const deliveryFeatures = [
       <div class="w-full bg-white/2 border border-white/10 rounded-lg py-8 px-6 lg:px-12 flex flex-col lg:flex-row items-center gap-8 justify-between">
         <div class="flex items-center gap-6 shrink-0 w-full lg:w-auto justify-center lg:justify-start">
           <ShieldIcon class="w-12 h-12 text-[#c19d60]" />
-          <h3 class="text-lg lg:text-[22px] uppercase tracking-widest font-light whitespace-nowrap">Ваша оправа —<br />наша ответственность</h3>
+          <h3 class="text-lg lg:text-[22px] uppercase tracking-widest font-light whitespace-nowrap">Ваша оправа -<br />наша ответственность</h3>
         </div>
 
-        <div class="hidden lg:block w-px h-16 bg-white/10 shrink-0"></div>
+        <div class="hidden lg:block w-px h-16 bg-[#c19d60] shrink-0"></div>
 
         <p class="text-white/80 text-sm lg:text-base text-center lg:text-left max-w-sm">Мы упаковываем каждую оправу так, как будто это наша собственная</p>
 
         <a
           href="#"
-          class="shrink-0 flex items-center justify-center w-full lg:w-auto gap-4 px-8 py-5 border border-[#c19d60]/30 text-[#c19d60] text-[11px] uppercase tracking-widest hover:bg-[#c19d60] hover:text-black hover:border-[#c19d60] transition-all duration-300 rounded group"
+          class="shrink-0 flex items-center justify-center w-full lg:w-auto gap-4 px-8 py-5 border border-[#c19d60]/30 text-[#c19d60] text-sm uppercase tracking-widest hover:bg-[#c19d60] hover:text-black hover:border-[#c19d60] transition-all duration-300 rounded group"
         >
           Как мы упаковываем
           <svg class="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
