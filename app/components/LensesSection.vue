@@ -56,7 +56,7 @@ const cards: { num: string; title: string; desc: string; image: string }[] = [
             {{ card.title }}
           </h3>
 
-          <p class="text-gray-400 text-xs leading-relaxed whitespace-pre-line z-10 relative">
+          <p class="text-white/60 text-xs leading-relaxed whitespace-pre-line z-10 relative">
             {{ card.desc }}
           </p>
 

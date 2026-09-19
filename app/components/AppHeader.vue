@@ -17,7 +17,7 @@ import AvitoIcon from "~/assets/icons/avito-icon.svg?component";
       </div>
 
       <div class="flex items-center gap-10">
-        <div class="flex items-center gap-6 text-gray-400">
+        <div class="flex items-center gap-8 text-white/60">
           <a href="#" class="hover:text-white transition-colors">
             <TelegramIcon class="w-5 h-5" />
           </a>
@@ -30,7 +30,7 @@ import AvitoIcon from "~/assets/icons/avito-icon.svg?component";
           </a>
         </div>
 
-        <div class="flex flex-col text-gray-300 text-sm tracking-wider">
+        <div class="flex flex-col text-white/60 text-sm tracking-wider">
           <span>+7 (999) 999-99-99</span>
           <span>+7 (999) 999-99-99</span>
         </div>
