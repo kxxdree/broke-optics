@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Century Gothic", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}

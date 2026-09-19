@@ -1,3 +1,15 @@
+<script setup lang="ts"></script>
+
 <template>
-  <h1 class="text-3xl">asdsadsadsad</h1>
+  <div class="min-h-screen bg-[#070707] text-white relative flex flex-col">
+    <AppHeader />
+    <HeroSection />
+    <LensesSection />
+    <CheaperSection />
+    <HowItWorksSection />
+    <ExamplesSection />
+    <DeliverySection />
+    <FAQSection />
+    <AppFooter />
+  </div>
 </template>
