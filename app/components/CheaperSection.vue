@@ -79,7 +79,7 @@
                 <div class="text-sm text-white">{{ item.desc }}</div>
               </div>
               <div class="text-[#c19d60] text-sm shrink-0 pl-2">
-                <CheckIcon class="text-[#c19d60] w-6 h-6" />
+                <CheckIcon class="text-[#c19d60] w-8 h-8" />
               </div>
             </div>
           </div>
