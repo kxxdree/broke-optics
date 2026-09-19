@@ -38,7 +38,7 @@ const steps: { num: string; title: string; desc: string; image: string }[] = [
 
         <div class="w-12 h-px bg-[#c19d60] mb-8"></div>
 
-        <p class="text-white/80 text-[1rem] leading-relaxed max-w-sm mb-12">Мы делаем процесс максимально<br />простым и понятным для вас.</p>
+        <p class="text-white/80 text-[1rem] leading-relaxed max-w-[20rem] mb-8">Мы делаем процесс максимальн простым и понятным для вас</p>
 
         <div class="flex items-center gap-8 flex-wrap">
           <BaseButton>
