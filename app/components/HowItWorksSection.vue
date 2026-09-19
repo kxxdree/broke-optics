@@ -31,10 +31,10 @@ const steps: { num: string; title: string; desc: string; image: string }[] = [
 </script>
 
 <template>
-  <section class="relative w-full py-12 bg-[#070707] text-white overflow-hidden border-b border-white/5">
-    <div class="max-w-[1920px] mx-auto px-6 flex flex-col lg:flex-row gap-16 items-stretch relative z-10">
-      <div class="w-[30%] flex flex-col shrink-0 pt-2">
-        <h2 class="text-5xl md:text-[4rem] leading-[1.1] uppercase mb-6 font-light tracking-widest">Как это<br />работает</h2>
+  <section class="relative w-full overflow-hidden pt-36">
+    <div class="max-w-[1920px] mx-auto px-28 flex flex-col lg:flex-row gap-16 items-stretch relative z-10">
+      <div class="w-[35%] flex flex-col shrink-0 pt-2">
+        <h2 class="text-5xl md:text-[3.5rem] leading uppercase mb-6 font-light tracking-widest">Как это<br />работает</h2>
 
         <div class="w-12 h-px bg-[#c19d60] mb-8"></div>
 
@@ -46,7 +46,7 @@ const steps: { num: string; title: string; desc: string; image: string }[] = [
           </template>
           Отправить рецепт
         </BaseButton>
-      </div> 
+      </div>
 
       <ul class="w-full grid grid-cols-4">
         <li v-for="step in steps" :key="step.num" class="flex flex-col group border-r border-white/10 rounded p-4 last-of-type:border-0">

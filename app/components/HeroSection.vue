@@ -4,14 +4,14 @@ import TelegramIcon from "~/assets/icons/telegram-icon.svg?component";
 </script>
 
 <template>
-  <section class="relative w-full overflow-hidden min-h-screen py-12">
+  <section class="relative w-full overflow-hidden pt-12 flex flex-col">
     <!-- Фоновая заглушка для очков (вставь сюда картинку через bg-[url(...)]) -->
     <div class="absolute inset-0 z-0 pointer-events-none"></div>
 
-    <div class="relative z-10 grow flex flex-col justify-center max-w-[1920px] mx-auto px-28 w-full mb-12">
+    <div class="relative z-10 max-w-[1920px] mx-auto px-28 w-full">
       <h1 class="text-[#c19d60] text-md tracking-[0.45em] uppercase mb-4 font-light">Оптика нового формата</h1>
 
-      <h2 class="text-5xl md:text-[5rem] leading-[1.1] uppercase mb-6 font-light tracking-wide">
+      <h2 class="text-5xl md:text-[5rem] leading uppercase mb-6 font-light tracking-wide">
         Меняем линзы<br />
         в вашей оправе<br />
         без переплат
@@ -41,7 +41,7 @@ import TelegramIcon from "~/assets/icons/telegram-icon.svg?component";
       </div>
     </div>
 
-    <ul class="relative z-10 w-full max-w-[1920px] mx-auto px-28 mt-auto">
+    <ul class="relative z-10 w-full max-w-[1920px] mx-auto px-28 mt-16">
       <div class="flex items-start gap-12">
         <li class="flex flex-col border-l border-[#c19d60] pl-4">
           <span class="text-white/90 text-lg uppercase mb-1 tracking-wide">100%</span>

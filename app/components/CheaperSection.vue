@@ -31,10 +31,10 @@ const brokeOptics = [
 </script>
 
 <template>
-  <section class="relative w-full bg-[#070707] text-white overflow-hidden pb-24">
-    <div class="max-w-[1920px] mx-auto px-6 flex flex-col lg:flex-row gap-16 items-stretch relative z-10">
+  <section class="relative w-full overflow-hidden pt-36">
+    <div class="max-w-[1920px] mx-auto px-28 flex flex-col lg:flex-row gap-16 items-stretch relative z-10">
       <div class="w-full lg:w-[60%] flex flex-col pt-10">
-        <h2 class="text-5xl md:text-[4rem] leading-tight uppercase mb-6 font-light tracking-widest">
+        <h2 class="text-5xl md:text-[3.5rem] leading uppercase mb-6 font-light tracking-widest">
           Почему<br />
           у нас дешевле
         </h2>
