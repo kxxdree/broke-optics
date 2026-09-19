@@ -3,7 +3,7 @@ import BaseButton from "~/components/UI/BaseButton.vue";
 </script>
 
 <template>
-  <section class="relative w-full py-10 overflow-hidden">
+  <section class="relative w-full overflow-hidden pb-12">
     <!-- Фоновая заглушка для очков (вставь сюда картинку через bg-[url(...)]) -->
     <div class="absolute inset-0 z-0 pointer-events-none"></div>
 

@@ -28,7 +28,7 @@ const cards: { num: string; title: string; desc: string; image: string }[] = [
 </script>
 
 <template>
-  <section class="relative w-full py-10 overflow-hidden">
+  <section class="relative w-full overflow-hidden pb-12">
     <!-- Заглушка для фонового изображения секции. Замени на свой bg-[url('...')] -->
     <div class="absolute inset-0 z-0 pointer-events-none"></div>
 
@@ -47,11 +47,7 @@ const cards: { num: string; title: string; desc: string; image: string }[] = [
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div
-          v-for="card in cards"
-          :key="card.num"
-          class="flex flex-col h-95 bg-white/2 border border-white/10 rounded pt-8 px-8 relative overflow-hidden"
-        >
+        <div v-for="card in cards" :key="card.num" class="flex flex-col h-95 bg-white/2 border border-white/10 rounded pt-8 px-8 relative overflow-hidden">
           <span class="text-4xl font-light text-white mb-6">
             {{ card.num }}
           </span>
