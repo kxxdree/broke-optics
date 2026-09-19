@@ -6,7 +6,7 @@ import AvitoIcon from "~/assets/icons/avito-icon.svg?component";
 </script>
 
 <template>
-  <header class="w-full border-b border-white/10 relative z-20">
+  <header class="w-full border-b border-white/10 absolute z-20">
     <div class="max-[1920px] mx-auto px-12 h-24 flex items-center justify-between">
       <div class="flex items-center gap-4">
         <div class="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-white/50 text-xs">LOGO</div>

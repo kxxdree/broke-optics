@@ -4,11 +4,11 @@ import TelegramIcon from "~/assets/icons/telegram-icon.svg?component";
 </script>
 
 <template>
-  <section class="relative w-full overflow-hidden pt-12 flex flex-col">
-    <!-- Фоновая заглушка для очков (вставь сюда картинку через bg-[url(...)]) -->
+  <section class="relative min-h-dvh w-full overflow-hidden flex flex-col pt-12">
+    <!-- Фоновая заглушка -->
     <div class="absolute inset-0 z-0 pointer-events-none"></div>
 
-    <div class="relative z-10 max-w-[1920px] mx-auto px-28 w-full">
+    <div class="relative z-10 max-w-[1920px] mx-auto px-28 pt-28 w-full">
       <h1 class="text-[#c19d60] text-md tracking-[0.45em] uppercase mb-4 font-light">Оптика нового формата</h1>
 
       <h2 class="text-5xl md:text-[5rem] leading uppercase mb-6 font-light tracking-wide">
@@ -36,33 +36,34 @@ import TelegramIcon from "~/assets/icons/telegram-icon.svg?component";
           <template #icon>
             <TelegramIcon class="w-4.5 h-4.5 text-[#c19d60] transition-transform group-hover:text-black/80" />
           </template>
+
           Отправить рецепт и фото оправы
         </BaseButton>
       </div>
     </div>
 
-    <ul class="relative z-10 w-full max-w-[1920px] mx-auto px-28 mt-16">
-      <div class="flex items-start gap-12">
+    <div class="relative z-10 w-full max-w-[1920px] mx-auto px-28 mt-auto pb-12">
+      <ul class="flex items-start gap-12">
         <li class="flex flex-col border-l border-[#c19d60] pl-4">
-          <span class="text-white/90 text-lg uppercase mb-1 tracking-wide">100%</span>
-          <span class="text-white/60 text-sm uppercase tracking-widest">Оригинальные линзы</span>
+          <span class="text-white/90 text-lg uppercase mb-1 tracking-wide"> 100% </span>
+          <span class="text-white/60 text-sm uppercase tracking-widest"> Оригинальные линзы </span>
         </li>
 
         <li class="flex flex-col border-l border-[#c19d60] pl-4">
-          <span class="text-white/90 text-lg uppercase mb-1 mt-1 tracking-wide">Гарантия</span>
-          <span class="text-white/60 text-sm uppercase tracking-widest">На все работы</span>
+          <span class="text-white/90 text-lg uppercase mb-1 tracking-wide"> Гарантия </span>
+          <span class="text-white/60 text-sm uppercase tracking-widest"> На все работы </span>
         </li>
 
         <li class="flex flex-col border-l border-[#c19d60] pl-4">
-          <span class="text-white/90 text-lg uppercase mb-1 mt-1 tracking-wide">Быстрое</span>
-          <span class="text-white/60 text-sm uppercase tracking-widest">Изготовление</span>
+          <span class="text-white/90 text-lg uppercase mb-1 tracking-wide"> Быстрое </span>
+          <span class="text-white/60 text-sm uppercase tracking-widest"> Изготовление </span>
         </li>
 
         <li class="flex flex-col border-l border-[#c19d60] pl-4">
-          <span class="text-white/90 text-lg uppercase mb-1 mt-1 tracking-wide">Доставка</span>
-          <span class="text-white/60 text-sm uppercase tracking-widest">По всей Москве и России</span>
+          <span class="text-white/90 text-lg uppercase mb-1 tracking-wide"> Доставка </span>
+          <span class="text-white/60 text-sm uppercase tracking-widest"> По всей Москве и России </span>
         </li>
-      </div>
-    </ul>
+      </ul>
+    </div>
   </section>
 </template>
