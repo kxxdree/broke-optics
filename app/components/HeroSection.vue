@@ -8,7 +8,7 @@ import BaseButton from "~/components/UI/BaseButton.vue";
     <div class="absolute inset-0 z-0 pointer-events-none"></div>
 
     <div class="relative z-10 grow flex flex-col justify-center max-w-7xl mx-auto px-6 w-full py-12">
-      <h1 class="text-gray-400 text-lg tracking-[0.3em] uppercase mb-6 font-light">Премиальная оптика нового формата</h1>
+      <h1 class="text-white/70 text-lg tracking-[0.45em] uppercase mb-6 font-light">Премиальная оптика нового формата</h1>
 
       <h2 class="text-5xl md:text-[4rem] leading-tight uppercase mb-6 max-w-2xl font-light tracking-widest">
         Меняем линзы<br />

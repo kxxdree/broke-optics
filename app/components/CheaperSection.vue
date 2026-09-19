@@ -9,7 +9,7 @@
 
         <div class="w-12 h-px bg-[#c19d60] mb-6"></div>
 
-        <p class="text-gray-300 text-lg leading-relaxed max-w-sm mb-16">
+        <p class="text-white/80 text-lg leading-relaxed max-w-sm mb-16">
           Без салонов. Без продавцов.<br />
           Без переплат за витрины
           <br /><br />
@@ -21,11 +21,11 @@
           <span class="text-[#c19d60] text-2xl block -mb-3.75 tracking-widest">до</span>
 
           <span
-            class="text-[6.25rem] md:text-[8.125rem] leading-none bg-clip-text text-transparent bg-linear-to-b from-[#ebd094] to-[#8f7035] tracking-tighter block mb-2"
+            class="text-[6.25rem] md:text-[8.125rem] leading-none bg-clip-text text-transparent bg-linear-to-b from-[#ebd094] to-[#8f7035] tracking-tighter block"
           >
             - 40%
           </span>
-          <p class="text-white/60 text-[0.75rem] tracking-[0.3em] uppercase leading-relaxed">
+          <p class="text-white/60 text-[1.125rem] tracking-[0.3em] uppercase leading-relaxed">
             От стоимости<br />
             сетевых оптик
           </p>
