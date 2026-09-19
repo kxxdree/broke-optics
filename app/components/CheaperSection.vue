@@ -42,8 +42,8 @@
 
           <h3 class="text-center text-white/60 uppercase tracking-[0.15em] text-md mb-6 relative z-10 shrink-0">Обычная оптика</h3>
 
-          <div class="p-6 relative z-10 grow flex flex-col justify-between">
-            <div v-for="(item, index) in regularOptics" :key="index" class="flex items-center py-4 border-b border-white/5 last:border-b-0">
+          <ul class="px-6 pb-6 relative z-10 grow flex flex-col justify-between">
+            <li v-for="(item, index) in regularOptics" :key="index" class="flex items-center py-4 border-b border-white/5 last:border-b-0">
               <div class="w-10 shrink-0 text-gray-600 flex justify-center">
                 <component :is="item.icon" class="text-white/60 w-8 h-8" />
               </div>
@@ -54,8 +54,8 @@
               <div class="text-gray-600 text-sm shrink-0">
                 <CloseIcon class="text-white/60 w-6 h-6" />
               </div>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
 
         <div class="relative bg-black border border-[#c19d60] rounded pt-16 flex flex-col overflow-visible shadow-[0_0_30px_rgba(193,157,96,0.05)] h-full">
@@ -69,20 +69,20 @@
 
           <h3 class="text-center text-[#c19d60] uppercase tracking-[0.15em] text-md mb-6 relative z-10 shrink-0">Broke Optics</h3>
 
-          <div class="px-6 pb-6 relative z-10 grow flex flex-col justify-between">
-            <div v-for="(item, index) in brokeOptics" :key="index" class="flex items-center py-4 border-b border-white/5 last:border-b-0">
+          <ul class="px-6 pb-6 relative z-10 grow flex flex-col justify-between">
+            <li v-for="(item, index) in brokeOptics" :key="index" class="flex items-center py-4 border-b border-white/5 last:border-b-0">
               <div class="w-10 shrink-0 text-[#c19d60] flex justify-center">
                 <component :is="item.icon" class="text-[#c19d60] w-8 h-8" />
               </div>
               <div class="grow pl-4">
-                <div class="text-md text-white uppercase tracking-widest mb-1">{{ item.title }}</div>
-                <div class="text-sm text-white">{{ item.desc }}</div>
+                <div class="text-md text-white/90 uppercase tracking-widest mb-1">{{ item.title }}</div>
+                <div class="text-sm text-white/90">{{ item.desc }}</div>
               </div>
               <div class="text-[#c19d60] text-sm shrink-0 pl-2">
                 <CheckIcon class="text-[#c19d60] w-8 h-8" />
               </div>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
