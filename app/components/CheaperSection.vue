@@ -1,6 +1,5 @@
 <template>
   <section class="relative w-full bg-[#070707] text-white overflow-hidden">
-    <!-- Изменили items-start на items-stretch -->
     <div class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row gap-16 items-stretch relative z-10">
       <div class="w-full lg:w-[45%] flex flex-col pt-10">
         <h2 class="text-5xl md:text-[4rem] leading-tight uppercase mb-6 font-light tracking-widest">
@@ -53,14 +52,13 @@
                 <div class="text-[11px] text-gray-400 uppercase tracking-widest mb-1">{{ item.title }}</div>
                 <div class="text-[10px] text-gray-600">{{ item.desc }}</div>
               </div>
-              <div class="text-gray-600 text-sm flex-shrink-0 pl-2">
+              <div class="text-gray-600 text-sm shrink-0 pl-2">
                 <CloseIcon class="text-gray-400/60 w-5 h-5" />
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Добавили h-full -->
         <div class="relative bg-black border border-[#c19d60] rounded pt-16 flex flex-col overflow-visible shadow-[0_0_30px_rgba(193,157,96,0.05)] h-full">
           <div
             class="absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 rounded-full bg-[#0a0a0a] border border-[#c19d60] flex items-center justify-center z-20"
@@ -81,7 +79,7 @@
                 <div class="text-[11px] text-white uppercase tracking-widest mb-1">{{ item.title }}</div>
                 <div class="text-[10px] text-gray-500">{{ item.desc }}</div>
               </div>
-              <div class="text-[#c19d60] text-sm flex-shrink-0 pl-2">
+              <div class="text-[#c19d60] text-sm shrink-0 pl-2">
                 <CheckIcon class="text-[#c19d60] w-6 h-6" />
               </div>
             </div>
@@ -96,18 +94,14 @@
 import CheckIcon from "~/assets/icons/check-icon.svg?component";
 import StoreIcon from "~/assets/icons/store-icon.svg?component";
 import CloseIcon from "~/assets/icons/close-icon.svg?component";
+import AppartmentIcon from "~/assets/icons/apartment-icon.svg?component";
+import PersonIcon from "~/assets/icons/person-icon.svg?component";
+import PointOfSaleIcon from "~/assets/icons/point-of-sale-icon.svg?component";
+import TrendingUpIcon from "~/assets/icons/trending-up-icon.svg?component";
+import ScheduleIcon from "~/assets/icons/schedule-icon.svg?component";
 
 import { h } from "vue";
 
-const IconBuilding = () =>
-  h("svg", { fill: "none", stroke: "currentColor", viewBox: "0 0 24 24" }, [
-    h("path", {
-      "stroke-linecap": "round",
-      "stroke-linejoin": "round",
-      "stroke-width": "1.5",
-      d: "M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1v1H9V7zm5 0h1v1h-1V7zm-5 4h1v1H9v-1zm5 0h1v1h-1v-1z",
-    }),
-  ]);
 const IconUser = () =>
   h("svg", { fill: "none", stroke: "currentColor", viewBox: "0 0 24 24" }, [
     h("path", {
@@ -173,11 +167,11 @@ const IconLightning = () =>
   ]);
 
 const regularOptics = [
-  { icon: IconBuilding, title: "Аренда помещений", desc: "вы платите за их расходы" },
-  { icon: IconUser, title: "Персонал и продавцы", desc: "дополнительные наценки" },
-  { icon: IconPresentation, title: "Витрины и маркетинг", desc: "переплаты за бренд" },
-  { icon: IconTrending, title: "Наценки", desc: "до 300–500%" },
-  { icon: IconClock, title: "Долгие сроки", desc: "очереди и сложные процессы" },
+  { icon: AppartmentIcon, title: "Аренда помещений", desc: "вы платите за их расходы" },
+  { icon: PersonIcon, title: "Персонал и продавцы", desc: "дополнительные наценки" },
+  { icon: PointOfSaleIcon, title: "Витрины и маркетинг", desc: "переплаты за бренд" },
+  { icon: TrendingUpIcon, title: "Наценки", desc: "до 300–500%" },
+  { icon: ScheduleIcon, title: "Долгие сроки", desc: "очереди и сложные процессы" },
 ];
 
 const brokeOptics = [
