@@ -33,6 +33,7 @@
       </div>
 
       <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-6 pt-10">
+        <!-- Карточка 1 -->
         <div class="relative bg-white/2 border border-white/10 rounded pt-16 flex flex-col overflow-visible h-full">
           <div class="absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 rounded-full bg-[#111] border border-white/10 flex items-center justify-center z-20">
             <StoreIcon class="text-gray-400/60 w-10 h-10" />
@@ -40,24 +41,25 @@
 
           <div class="absolute top-0 left-0 right-0 h-32 bg-linear-to-b from-white/5 to-transparent z-0 rounded-t pointer-events-none"></div>
 
-          <h3 class="text-center text-gray-500 uppercase tracking-[0.15em] text-md mb-6 relative z-10">Обычная оптика</h3>
+          <h3 class="text-center text-gray-500 uppercase tracking-[0.15em] text-md mb-6 relative z-10 shrink-0">Обычная оптика</h3>
 
-          <div class="px-6 pb-6 relative z-10">
+          <div class="p-6 relative z-10 grow flex flex-col justify-between">
             <div v-for="(item, index) in regularOptics" :key="index" class="flex items-center py-4 border-b border-white/5 last:border-b-0">
               <div class="w-10 shrink-0 text-gray-600 flex justify-center">
-                <component :is="item.icon" class="w-5 h-5" />
+                <component :is="item.icon" class="w-8 h-8" />
               </div>
-              <div class="grow pl-2">
-                <div class="text-[11px] text-gray-400 uppercase tracking-widest mb-1">{{ item.title }}</div>
-                <div class="text-[10px] text-gray-600">{{ item.desc }}</div>
+              <div class="grow pl-4">
+                <div class="text-md text-gray-400 uppercase tracking-widest mb-1">{{ item.title }}</div>
+                <div class="text-sm text-gray-600">{{ item.desc }}</div>
               </div>
-              <div class="text-gray-600 text-sm shrink-0 pl-2">
-                <CloseIcon class="text-gray-400/60 w-5 h-5" />
+              <div class="text-gray-600 text-sm shrink-0">
+                <CloseIcon class="text-gray-400/60 w-6 h-6" />
               </div>
             </div>
           </div>
         </div>
 
+        <!-- Карточка 2 -->
         <div class="relative bg-black border border-[#c19d60] rounded pt-16 flex flex-col overflow-visible shadow-[0_0_30px_rgba(193,157,96,0.05)] h-full">
           <div
             class="absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 rounded-full bg-[#0a0a0a] border border-[#c19d60] flex items-center justify-center z-20"
@@ -67,16 +69,16 @@
 
           <div class="absolute top-0 left-0 right-0 h-32 bg-linear-to-b from-[#c19d60]/10 to-transparent z-0 rounded-t pointer-events-none"></div>
 
-          <h3 class="text-center text-[#c19d60] uppercase tracking-[0.15em] text-md mb-6 relative z-10">Broke Optics</h3>
+          <h3 class="text-center text-[#c19d60] uppercase tracking-[0.15em] text-md mb-6 relative z-10 shrink-0">Broke Optics</h3>
 
-          <div class="px-6 pb-6 relative z-10">
+          <div class="px-6 pb-6 relative z-10 grow flex flex-col justify-between">
             <div v-for="(item, index) in brokeOptics" :key="index" class="flex items-center py-4 border-b border-white/5 last:border-b-0">
               <div class="w-10 shrink-0 text-[#c19d60] flex justify-center">
-                <component :is="item.icon" class="text-[#c19d60] w-5 h-5" />
+                <component :is="item.icon" class="text-[#c19d60] w-8 h-8" />
               </div>
-              <div class="grow pl-2">
-                <div class="text-[11px] text-white uppercase tracking-widest mb-1">{{ item.title }}</div>
-                <div class="text-[10px] text-gray-500">{{ item.desc }}</div>
+              <div class="grow pl-4">
+                <div class="text-md text-white uppercase tracking-widest mb-1">{{ item.title }}</div>
+                <div class="text-sm text-gray-500">{{ item.desc }}</div>
               </div>
               <div class="text-[#c19d60] text-sm shrink-0 pl-2">
                 <CheckIcon class="text-[#c19d60] w-6 h-6" />
