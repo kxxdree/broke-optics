@@ -16,8 +16,8 @@ const clientLinks = ["Как отправить оправу", "Гарантия
     ></div>
 
     <div class="max-w-[1920px] mx-auto px-28 relative z-10 flex flex-col">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 mb-20">
-        <div class="flex flex-col">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8 mb-20">
+        <div class="flex flex-col lg:col-span-2 lg:pr-16">
           <div class="flex flex-col items-center w-fit mb-8">
             <div
               class="w-24 h-24 mb-4 bg-[url('/path-to-eagle-logo.png')] bg-contain bg-center bg-no-repeat opacity-80 border border-white/10 rounded-full flex items-center justify-center text-xs text-gray-500"
@@ -28,13 +28,13 @@ const clientLinks = ["Как отправить оправу", "Гарантия
             <p class="text-[0.75rem] tracking-[0.5em] text-gray-400 uppercase">Optics</p>
           </div>
 
-          <p class="text-white/80 text-[0.875rem] leading mb-8">
+          <p class="text-white/80 text-[0.875rem] leading mb-8 max-w-sm">
             Премиальная оптика нового формата. Изготавливаем линзы по вашему рецепту для любых оправ без переплат
           </p>
 
           <a
             href="#"
-            class="inline-flex items-center justify-center gap-4 px-8 py-4 border border-[#c19d60]/40 text-[#c19d60] text-sm uppercase tracking-widest hover:bg-[#c19d60] hover:text-black transition-all duration-300 rounded group w-fit"
+            class="inline-flex items-center mt-auto w-full justify-center gap-4 px-8 py-4 border border-[#c19d60]/40 text-[#c19d60] text-sm uppercase tracking-widest hover:bg-[#c19d60] hover:text-black transition-all duration-300 rounded group"
           >
             Оставить заявку
             <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
