@@ -32,7 +32,7 @@ const cards: { num: string; title: string; desc: string; image: string }[] = [
     <!-- Заглушка для фонового изображения секции. Замени на свой bg-[url('...')] -->
     <div class="absolute inset-0 z-0 pointer-events-none"></div>
 
-    <div class="max-w-7xl mx-auto px-6 relative z-10">
+    <div class="max-w-[1920px] mx-auto px-6 relative z-10">
       <div class="mb-12">
         <h2 class="text-5xl md:text-[4rem] leading-tight uppercase mb-6 font-light tracking-widest">
           Изготавливаем<br />

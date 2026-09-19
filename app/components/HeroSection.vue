@@ -4,11 +4,11 @@ import TelegramIcon from "~/assets/icons/telegram-icon.svg?component";
 </script>
 
 <template>
-  <section class="relative w-full overflow-hidden pb-12">
+  <section class="relative w-full overflow-hidden py-12">
     <!-- Фоновая заглушка для очков (вставь сюда картинку через bg-[url(...)]) -->
     <div class="absolute inset-0 z-0 pointer-events-none"></div>
 
-    <div class="relative z-10 grow flex flex-col justify-center max-w-7xl mx-auto px-6 w-full py-12">
+    <div class="relative z-10 grow flex flex-col justify-center max-w-[1920px] mx-auto px-6 w-full py-12">
       <h1 class="text-white/70 text-lg tracking-[0.45em] uppercase mb-6 font-light">Оптика нового формата</h1>
 
       <h2 class="text-5xl md:text-[4rem] leading-tight uppercase mb-6 max-w-2xl font-light tracking-widest">
@@ -43,7 +43,7 @@ import TelegramIcon from "~/assets/icons/telegram-icon.svg?component";
       </div>
     </div>
 
-    <ul class="relative z-10 w-full max-w-7xl mx-auto px-6 pb-12 mt-auto">
+    <ul class="relative z-10 w-full mx-auto px-6 pb-12 mt-auto">
       <div class="flex items-start gap-12">
         <li class="flex flex-col border-l border-[#c19d60] pl-4">
           <span class="text-white/70 text-sm uppercase mb-1 tracking-wide">100%</span>
