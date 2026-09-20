@@ -4,7 +4,7 @@ import TelegramIcon from "~/assets/icons/telegram-icon.svg?component";
 </script>
 
 <template>
-  <section class="relative min-h-dvh w-full overflow-hidden flex flex-col pt-12">
+  <section class="relative min-h-dvh w-full overflow-hidden flex flex-col pt-12 border-b border-white/10">
     <!-- Фоновая заглушка -->
     <div class="absolute inset-0 z-0 pointer-events-none"></div>
 

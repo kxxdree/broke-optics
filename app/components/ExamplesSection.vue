@@ -19,7 +19,7 @@ import { gallery } from "~/utils/gallery";
 
       <ul class="w-full grid grid-cols-2 md:grid-cols-4 gap-1.5">
         <li v-for="photo in gallery" :key="photo.id" class="flex flex-col group">
-          <div class="w-full aspect-square rounded border border-white flex items-center justify-center">
+          <div class="w-full aspect-square rounded border border-white/40 flex items-center justify-center">
             <img :src="photo.path" class="w-full h-full object-cover" />
           </div>
         </li>
