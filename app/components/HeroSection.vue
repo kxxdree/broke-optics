@@ -21,7 +21,7 @@ import BaseLink from "./UI/BaseLink.vue";
       <div class="w-16 h-px bg-[#c19d60] mb-6"></div>
 
       <p class="text-gray-300 text-lg leading-normal max-w-xl mb-6">
-        Изготавливаем линзы по вашему рецепту для любых оправ — быстро, точно и дешевле сетевых оптик
+        Изготавливаем линзы по вашему рецепту для любых оправ - быстро, точно и дешевле сетевых оптик
       </p>
 
       <div class="flex items-center flex-wrap gap-4 text-[0.75rem] text-white/60 uppercase tracking-widest mb-12">
