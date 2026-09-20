@@ -34,7 +34,7 @@ import BaseLink from "./UI/BaseLink.vue";
       <div class="flex items-center">
         <BaseLink class="w-full sm:w-auto justify-center">
           <TelegramIcon class="w-4.5 h-4.5 text-[#c19d60] transition-transform group-hover:text-black/80 shrink-0" />
-          <span class="text-sm sm:text-base text-center">Отправить рецепт и фото оправы</span>
+          <span>Отправить рецепт и фото оправы</span>
         </BaseLink>
       </div>
     </div>

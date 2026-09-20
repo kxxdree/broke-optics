@@ -42,7 +42,7 @@ import BaseLink from "./UI/BaseLink.vue";
         </div>
 
         <BaseLink class="hidden lg:flex">
-          <span class="text-sm xl:text-base">Оставить заявку</span>
+          <span>Оставить заявку</span>
         </BaseLink>
       </div>
     </div>
