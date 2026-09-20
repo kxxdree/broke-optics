@@ -19,16 +19,16 @@ import BaseLink from "./UI/BaseLink.vue";
 
       <div class="flex items-center gap-10">
         <div class="flex items-center gap-8 text-white/60">
-          <a href="#" class="hover:text-white transition-colors">
+          <nuxt-link href="https://t.me/+nyWSSt-ICKo3ZjJi" target="_blank" class="hover:text-white transition-colors">
             <TelegramIcon class="w-5 h-5" />
-          </a>
-          <a href="#" class="hover:text-white transition-colors">
+          </nuxt-link>
+          <nuxt-link href="https://www.instagram.com/broke.optics" target="_blank" class="hover:text-white transition-colors">
             <InstagramIcon class="w-5 h-5" />
-          </a>
-          <a href="#" class="hover:text-white transition-colors flex items-center gap-1">
+          </nuxt-link>
+          <nuxt-link href="#" target="_blank" class="hover:text-white transition-colors flex items-center gap-1">
             <AvitoIcon class="w-6 h-6" />
             <span class="block text-md font-bold">Avito</span>
-          </a>
+          </nuxt-link>
         </div>
 
         <div class="w-px h-8 bg-white/30"></div>
