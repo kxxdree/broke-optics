@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import BaseButton from "~/components/UI/BaseButton.vue";
 import TelegramIcon from "~/assets/icons/telegram-icon.svg?component";
+
+import BaseLink from "./UI/BaseLink.vue";
 </script>
 
 <template>
@@ -32,13 +33,10 @@ import TelegramIcon from "~/assets/icons/telegram-icon.svg?component";
       </div>
 
       <div class="flex items-center gap-10">
-        <BaseButton class="text-[#c19d60]">
-          <template #icon>
-            <TelegramIcon class="w-4.5 h-4.5 text-[#c19d60] transition-transform group-hover:text-black/80" />
-          </template>
-
-          Отправить рецепт и фото оправы
-        </BaseButton>
+        <BaseLink>
+          <TelegramIcon class="w-4.5 h-4.5 text-[#c19d60] transition-transform group-hover:text-black/80" />
+          <span>Отправить рецепт и фото оправы</span>
+        </BaseLink>
       </div>
     </div>
 

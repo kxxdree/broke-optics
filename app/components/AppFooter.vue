@@ -4,6 +4,8 @@ import InstagramIcon from "~/assets/icons/instagram-icon.svg?component";
 import AvitoIcon from "~/assets/icons/avito-icon.svg?component";
 import PhoneIcon from "~/assets/icons/phone-icon.svg?component";
 
+import BaseLink from "./UI/BaseLink.vue";
+
 const infoLinks = ["Что мы делаем", "Почему у нас дешевле", "Как мы работаем", "Примеры работ", "Доставка", "Ответы на вопросы"];
 
 const clientLinks = ["Как отправить оправу", "Гарантия", "Возврат и обмен", "Конфиденциальность"];
@@ -32,15 +34,12 @@ const clientLinks = ["Как отправить оправу", "Гарантия
             Премиальная оптика нового формата. Изготавливаем линзы по вашему рецепту для любых оправ без переплат
           </p>
 
-          <a
-            href="#"
-            class="inline-flex items-center mt-auto w-full justify-center gap-4 px-8 py-4 border border-[#c19d60]/40 text-[#c19d60] text-sm uppercase tracking-widest hover:bg-[#c19d60] hover:text-black transition-all duration-300 rounded group"
-          >
-            Оставить заявку
-            <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <BaseLink class="mt-auto">
+            <span>Оставить заявку</span>
+            <svg class="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
-          </a>
+          </BaseLink>
         </div>
 
         <div class="flex flex-col lg:px-8 lg:border-l border-white/10">

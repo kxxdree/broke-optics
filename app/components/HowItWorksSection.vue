@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import BaseButton from "./UI/BaseButton.vue";
+import BaseLink from "./UI/BaseLink.vue";
 
 const steps: { num: string; title: string; desc: string; image: string }[] = [
   {
@@ -43,7 +43,9 @@ const steps: { num: string; title: string; desc: string; image: string }[] = [
 
         <p class="text-white/80 text-lg leading-relaxed max-w-[20rem] mb-8">Мы делаем процесс максимально простым и понятным для вас</p>
 
-        <BaseButton class="w-fit mt-auto text-[#c19d60]"> Отправить рецепт </BaseButton>
+        <BaseLink class="mt-auto">
+          <span>Отправить рецепт</span>
+        </BaseLink>
       </div>
 
       <ul class="w-full grid grid-cols-4">

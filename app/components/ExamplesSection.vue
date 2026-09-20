@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import BaseButton from "./UI/BaseButton.vue";
+import BaseLink from "./UI/BaseLink.vue";
 
 import { gallery } from "~/utils/gallery";
 </script>
@@ -14,7 +14,9 @@ import { gallery } from "~/utils/gallery";
 
         <p class="text-white/80 text-lg leading-relaxed max-w-lg mb-8">Реальные оправы. Настоящие результаты. Премиальное качество в каждой детали</p>
 
-        <BaseButton class="w-fit mt-auto border-white/50 text-white/80 hover:bg-white/80"> Смотреть все работы </BaseButton>
+        <BaseLink class="w-fit mt-auto border-white/50 text-white/80 hover:bg-white/80">
+          <span>Смотреть все работы</span>
+        </BaseLink>
       </div>
 
       <ul class="w-full grid grid-cols-2 md:grid-cols-4 gap-1.5">

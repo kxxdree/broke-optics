@@ -1,8 +1,9 @@
 <script setup lang="ts">
-import BaseButton from "./UI/BaseButton.vue";
 import TelegramIcon from "~/assets/icons/telegram-icon.svg?component";
 import InstagramIcon from "~/assets/icons/instagram-icon.svg?component";
 import AvitoIcon from "~/assets/icons/avito-icon.svg?component";
+
+import BaseLink from "./UI/BaseLink.vue";
 </script>
 
 <template>
@@ -37,7 +38,9 @@ import AvitoIcon from "~/assets/icons/avito-icon.svg?component";
           <span>+7 (999) 999-99-99</span>
         </div>
 
-        <BaseButton class="text-[#c19d60]">Оставить заявку</BaseButton>
+        <BaseLink>
+          <span>Оставить заявку</span>
+        </BaseLink>
       </div>
     </div>
   </header>
