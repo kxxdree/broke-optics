@@ -33,6 +33,8 @@ const infoLinks: { title: string; link: string }[] = [
 ];
 
 const clientLinks = ["Как отправить оправу", "Гарантия", "Возврат и обмен", "Конфиденциальность"];
+
+const currentYear = new Date().getFullYear();
 </script>
 
 <template>
@@ -127,7 +129,7 @@ const clientLinks = ["Как отправить оправу", "Гарантия
 
       <div class="flex flex-col md:flex-row items-center justify-between gap-4 pt-6 sm:pt-8 border-t border-white/10 text-center md:text-left">
         <div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-white/60 text-[0.75rem] sm:text-[0.875rem]">
-          <span class="uppercase tracking-widest text-white/60">Broke Optics &copy; {{ new Date().getFullYear() }}</span>
+          <span class="uppercase tracking-widest text-white/60">Broke Optics &copy; {{ currentYear }}</span>
 
           <div class="hidden sm:block w-px h-4 bg-white/20"></div>
           <span>Все права защищены</span>
