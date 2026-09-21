@@ -34,7 +34,7 @@ const clientLinks = ["Как отправить оправу", "Гарантия
             Премиальная оптика нового формата. Изготавливаем линзы по вашему рецепту для любых оправ без переплат
           </p>
 
-          <BaseLink class="mt-0 lg:mt-auto w-full sm:w-fit justify-center group">
+          <BaseLink :url="'https://t.me/managebroke'" class="mt-0 lg:mt-auto w-full sm:w-fit justify-center group">
             <span>Оставить заявку</span>
             <svg class="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -124,7 +124,9 @@ const clientLinks = ["Как отправить оправу", "Гарантия
         </div>
       </div>
 
-      <div class="flex flex-col md:flex-row items-center justify-between gap-4 pt-6 sm:pt-8 border-t border-white/10 text-center md:text-left">
+      <div
+        class="flex flex-col md:flex-row items-center justify-between gap-4 pt-6 sm:pt-8 border-t border-white/10 text-center md:text-left"
+      >
         <div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-white/60 text-[10px] sm:text-[12px]">
           <span class="uppercase tracking-widest text-white/60">Broke Optics &copy; {{ new Date().getFullYear() }}</span>
 

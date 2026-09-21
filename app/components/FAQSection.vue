@@ -20,9 +20,13 @@ const toggleItem = (index: number) => {
       class="absolute -top-24 sm:-top-48 -left-16 sm:-left-36 w-96 h-96 sm:w-137.5 sm:h-137.5 rounded-full bg-[radial-gradient(circle,rgba(255,255,255,0.1)_0%,rgba(255,255,255,0.05)_35%,transparent_90%)] blur-3xl pointer-events-none z-0"
     ></div>
 
-    <div class="max-w-[1920px] mx-auto px-5 sm:px-10 lg:px-20 xl:px-28 flex flex-col lg:flex-row gap-10 lg:gap-16 items-start relative z-10">
+    <div
+      class="max-w-[1920px] mx-auto px-5 sm:px-10 lg:px-20 xl:px-28 flex flex-col lg:flex-row gap-10 lg:gap-16 items-start relative z-10"
+    >
       <div class="w-full lg:w-[35%] flex flex-col shrink-0 pt-2 lg:sticky lg:top-24">
-        <h2 class="text-3xl sm:text-4xl lg:text-5xl xl:text-[3.5rem] leading-tight uppercase mb-5 sm:mb-6 font-light tracking-wide sm:tracking-widest">
+        <h2
+          class="text-3xl sm:text-4xl lg:text-5xl xl:text-[3.5rem] leading-tight uppercase mb-5 sm:mb-6 font-light tracking-wide sm:tracking-widest"
+        >
           Ответы на вопросы
         </h2>
 
@@ -40,7 +44,9 @@ const toggleItem = (index: number) => {
           @click="toggleItem(index)"
           class="group cursor-pointer rounded border transition-all duration-300 relative overflow-hidden flex flex-col"
           :class="[
-            activeIndex === index ? 'bg-linear-to-r from-[#c19d60]/5 to-transparent border-[#c19d60]/30' : 'bg-white/2 border-white/5 hover:border-white/10',
+            activeIndex === index
+              ? 'bg-linear-to-r from-[#c19d60]/5 to-transparent border-[#c19d60]/30'
+              : 'bg-white/2 border-white/5 hover:border-white/10',
           ]"
         >
           <div
@@ -50,7 +56,10 @@ const toggleItem = (index: number) => {
 
           <div class="p-4 sm:p-6 md:px-8 md:py-6 flex items-start gap-4 sm:gap-6">
             <div class="flex flex-col items-center shrink-0 pt-1">
-              <span class="text-base sm:text-lg font-light leading-none mb-2" :class="activeIndex === index ? 'text-[#c19d60]' : 'text-white/60'">
+              <span
+                class="text-base sm:text-lg font-light leading-none mb-2"
+                :class="activeIndex === index ? 'text-[#c19d60]' : 'text-white/60'"
+              >
                 {{ faq.num }}
               </span>
               <div class="w-full h-px" :class="activeIndex === index ? 'bg-[#c19d60]' : 'bg-white/30'"></div>
@@ -66,12 +75,15 @@ const toggleItem = (index: number) => {
                 </h3>
 
                 <div class="shrink-0 flex items-center justify-center">
-                  <AddIcon v-if="activeIndex !== index" class="w-4 h-4 sm:w-5 sm:h-5 text-gray-500 group-hover:text-white/80 transition-colors" />
+                  <AddIcon
+                    v-if="activeIndex !== index"
+                    class="w-4 h-4 sm:w-5 sm:h-5 text-gray-500 group-hover:text-white/80 transition-colors"
+                  />
                   <RemoveIcon v-else class="w-4 h-4 sm:w-5 sm:h-5 text-[#c19d60]" />
                 </div>
               </div>
 
-              <p v-show="activeIndex === index" class="mt-3 sm:mt-4 text-[0.875rem] text-white/60 leading-relaxed pr-2 sm:pr-8">
+              <p v-show="activeIndex === index" class="mt-3 sm:mt-4 text-[1rem] text-white/60 leading-relaxed pr-2 sm:pr-8">
                 {{ faq.answer }}
               </p>
             </div>
@@ -92,7 +104,7 @@ const toggleItem = (index: number) => {
 
           <div class="hidden md:block w-px h-12 bg-[#c19d60]/50 mx-2"></div>
 
-          <BaseLink class="w-full sm:w-auto justify-center group">
+          <BaseLink :url="'https://t.me/managebroke'" class="w-full sm:w-auto justify-center group">
             <span>Написать в Telegram</span>
             <svg class="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 8l4 4m0 0l-4 4m4-4H3" />

@@ -32,7 +32,7 @@ import BaseLink from "./UI/BaseLink.vue";
       </div>
 
       <div class="flex items-center">
-        <BaseLink class="w-full sm:w-auto justify-center">
+        <BaseLink :url="'https://t.me/managebroke'" class="w-full sm:w-auto justify-center">
           <TelegramIcon class="w-4.5 h-4.5 text-[#c19d60] transition-transform group-hover:text-black/80 shrink-0" />
           <span>Отправить рецепт и фото оправы</span>
         </BaseLink>
