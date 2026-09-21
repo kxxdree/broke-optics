@@ -71,7 +71,7 @@ const toggleItem = (index: number) => {
                 </div>
               </div>
 
-              <p v-show="activeIndex === index" class="mt-3 sm:mt-4 text-xs sm:text-[0.875rem] text-white/60 leading-relaxed pr-2 sm:pr-8">
+              <p v-show="activeIndex === index" class="mt-3 sm:mt-4 text-[0.875rem] text-white/60 leading-relaxed pr-2 sm:pr-8">
                 {{ faq.answer }}
               </p>
             </div>

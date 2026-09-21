@@ -76,7 +76,7 @@ const deliveryFeatures = [
         <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 shrink-0 w-full lg:w-auto text-center sm:text-left">
           <ShieldIcon class="w-10 h-10 sm:w-12 sm:h-12 text-[#c19d60] shrink-0" />
           <h3 class="text-base sm:text-lg lg:text-[22px] uppercase tracking-wide sm:tracking-widest font-light">
-            Ваша оправа -<br class="hidden sm:block" />наша ответственность
+            Ваша оправа - <br class="hidden sm:block" />наша ответственность
           </h3>
         </div>
 

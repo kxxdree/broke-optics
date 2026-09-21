@@ -42,7 +42,7 @@ const cards: { num: string; title: string; desc: string; image: string }[] = [
         <div class="w-10 sm:w-12 h-px bg-[#c19d60] mb-5 sm:mb-6"></div>
 
         <p class="text-white/80 text-base sm:text-lg leading-relaxed max-w-lg">
-          Работаем с любыми оправами — от повседневных до luxury моделей. Подбираем линзы по рецепту и вашим потребностям
+          Работаем с любыми оправами - от повседневных до luxury моделей. Подбираем линзы по рецепту и вашим потребностям
         </p>
       </div>
 
@@ -56,11 +56,11 @@ const cards: { num: string; title: string; desc: string; image: string }[] = [
             {{ card.num }}
           </span>
 
-          <h3 class="text-white text-xs sm:text-sm tracking-widest uppercase mb-3 sm:mb-4 whitespace-pre-line leading-relaxed relative z-10">
+          <h3 class="text-white text-sm tracking-widest uppercase mb-3 sm:mb-4 whitespace-pre-line leading-relaxed relative z-10">
             {{ card.title }}
           </h3>
 
-          <p class="text-white/60 text-xs sm:text-sm leading-relaxed whitespace-pre-line relative z-10">
+          <p class="text-white/60 text-sm leading-relaxed whitespace-pre-line relative z-10">
             {{ card.desc }}
           </p>
 
