@@ -20,8 +20,8 @@ const clientLinks = ["Как отправить оправу", "Гарантия
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-16 lg:mb-20">
         <div class="flex flex-col lg:col-span-2 lg:pr-16 md:col-span-2">
           <div class="flex flex-col mx-auto lg:items-center lg:w-fit mb-6 sm:mb-8">
-            <h2 class="text-2xl sm:text-5xl tracking-[0.2em] sm:tracking-[0.3em] font-serif uppercase mb-1">Broke</h2>
-            <p class="text-[0.65rem] sm:text-[1.25rem] tracking-[0.4em] sm:tracking-[0.5em] text-gray-400 uppercase">Optics</p>
+            <h2 class="text-4xl sm:text-5xl tracking-[0.2em] sm:tracking-[0.3em] font-serif uppercase mb-1">Broke</h2>
+            <p class="text-[1rem] sm:text-[1.25rem] tracking-[0.4em] sm:tracking-[0.5em] text-white/60 text-center uppercase">Optics</p>
           </div>
 
           <p class="text-white/80 text-sm sm:text-[1rem] leading-relaxed mb-8 max-w-sm">
@@ -83,7 +83,7 @@ const clientLinks = ["Как отправить оправу", "Гарантия
           <h4 class="text-white/60 text-sm sm:text-[1rem] tracking-[0.15em] uppercase mb-6 sm:mb-8">Информация</h4>
           <ul class="flex flex-col gap-4 sm:gap-5">
             <li v-for="link in infoLinks" :key="link">
-              <a href="#" class="text-white/60 text-sm sm:text-[0.875rem] hover:text-[#c19d60] transition-colors">{{ link }}</a>
+              <nuxt-link href="#" class="text-white/60 text-sm sm:text-[0.875rem] hover:text-[#c19d60] transition-colors">{{ link }}</nuxt-link>
             </li>
           </ul>
         </div>
@@ -92,21 +92,21 @@ const clientLinks = ["Как отправить оправу", "Гарантия
           <h4 class="text-white/60 text-sm sm:text-[1rem] tracking-[0.15em] uppercase mb-6 sm:mb-8">Для клиентов</h4>
           <ul class="flex flex-col gap-4 sm:gap-5">
             <li v-for="link in clientLinks" :key="link">
-              <a href="#" class="text-white/60 text-sm sm:text-[0.875rem] hover:text-[#c19d60] transition-colors">{{ link }}</a>
+              <nuxt-link href="#" class="text-white/60 text-sm sm:text-[0.875rem] hover:text-[#c19d60] transition-colors">{{ link }}</nuxt-link>
             </li>
           </ul>
         </div>
       </div>
 
       <div class="flex flex-col md:flex-row items-center justify-between gap-4 pt-6 sm:pt-8 border-t border-white/10 text-center md:text-left">
-        <div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-white/60 text-[10px] sm:text-[12px]">
+        <div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-white/60 text-[0.75rem] sm:text-[0.875rem]">
           <span class="uppercase tracking-widest text-white/60">Broke Optics &copy; {{ new Date().getFullYear() }}</span>
 
           <div class="hidden sm:block w-px h-4 bg-white/20"></div>
           <span>Все права защищены</span>
         </div>
 
-        <span class="text-white/60 text-[10px] sm:text-[12px] mt-2 md:mt-0"> Сделано с вниманием к деталям </span>
+        <span class="text-white/60 text-[0.75rem] sm:text-[0.875rem] mt-2 md:mt-0"> Сделано с вниманием к деталям </span>
       </div>
     </div>
   </footer>
