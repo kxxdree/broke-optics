@@ -2,7 +2,6 @@
 import TelegramIcon from "~/assets/icons/telegram-icon.svg?component";
 import InstagramIcon from "~/assets/icons/instagram-icon.svg?component";
 import AvitoIcon from "~/assets/icons/avito-icon.svg?component";
-import PhoneIcon from "~/assets/icons/phone-icon.svg?component";
 
 import BaseLink from "./UI/BaseLink.vue";
 
