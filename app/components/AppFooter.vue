@@ -20,18 +20,14 @@ const clientLinks = ["Как отправить оправу", "Гарантия
     <div class="max-w-[1920px] mx-auto px-5 sm:px-10 lg:px-20 xl:px-28 relative z-10 flex flex-col">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-16 lg:mb-20">
         <div class="flex flex-col lg:col-span-2 lg:pr-16 md:col-span-2">
-          <div class="flex flex-col items-start lg:items-center lg:w-fit mb-6 sm:mb-8">
-            <div
-              class="w-20 h-20 sm:w-24 sm:h-24 mb-4 bg-[url('/path-to-eagle-logo.png')] bg-contain bg-center bg-no-repeat opacity-80 border border-white/10 rounded-full flex items-center justify-center text-[10px] sm:text-xs text-gray-500"
-            >
-              LOGO
-            </div>
-            <h2 class="text-2xl sm:text-3xl tracking-[0.2em] sm:tracking-[0.3em] font-serif uppercase mb-1">Broke</h2>
-            <p class="text-[0.65rem] sm:text-[0.75rem] tracking-[0.4em] sm:tracking-[0.5em] text-gray-400 uppercase">Optics</p>
+          <div class="flex flex-col mx-auto lg:items-center lg:w-fit mb-6 sm:mb-8">
+            <h2 class="text-2xl sm:text-5xl tracking-[0.2em] sm:tracking-[0.3em] font-serif uppercase mb-1">Broke</h2>
+            <p class="text-[0.65rem] sm:text-[1.25rem] tracking-[0.4em] sm:tracking-[0.5em] text-gray-400 uppercase">Optics</p>
           </div>
 
-          <p class="text-white/80 text-sm sm:text-[0.875rem] leading-relaxed mb-8 max-w-sm">
-            Премиальная оптика нового формата. Изготавливаем линзы по вашему рецепту для любых оправ без переплат
+          <p class="text-white/80 text-sm sm:text-[1rem] leading-relaxed mb-8 max-w-sm">
+            Премиальная оптика нового формата. <br />
+            Изготавливаем линзы по вашему рецепту для любых оправ без переплат
           </p>
 
           <BaseLink :url="'https://t.me/managebroke'" class="mt-0 lg:mt-auto w-full sm:w-fit justify-center group">
@@ -81,27 +77,6 @@ const clientLinks = ["Как отправить оправу", "Гарантия
                 <span class="text-white/60 text-xs sm:text-[0.75rem]">Broke Optics</span>
               </div>
             </nuxt-link>
-          </div>
-
-          <div class="w-full h-px bg-white/10 my-6 sm:my-8"></div>
-
-          <div class="flex flex-col gap-4 sm:gap-5">
-            <a href="tel:+79999999999" class="flex items-center gap-4 group">
-              <div
-                class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center group-hover:border-[#c19d60] transition-colors shrink-0"
-              >
-                <PhoneIcon class="w-4 h-4 text-white/60 group-hover:text-[#c19d60]" />
-              </div>
-              <span class="text-white/60 text-sm sm:text-[0.875rem] group-hover:text-white transition-colors">+7 (999) 999-99-99</span>
-            </a>
-            <a href="tel:+79999999999" class="flex items-center gap-4 group">
-              <div
-                class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center group-hover:border-[#c19d60] transition-colors shrink-0"
-              >
-                <PhoneIcon class="w-4 h-4 text-white/60 group-hover:text-[#c19d60]" />
-              </div>
-              <span class="text-white/60 text-sm sm:text-[0.875rem] group-hover:text-white transition-colors">+7 (999) 999-99-99</span>
-            </a>
           </div>
         </div>
 
