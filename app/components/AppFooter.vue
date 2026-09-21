@@ -65,52 +65,52 @@ const currentYear = new Date().getFullYear();
         </div>
 
         <div class="flex flex-col pt-8 lg:pt-0 border-t lg:border-t-0 lg:border-l border-white/10 lg:px-8">
-          <h4 class="text-white/60 text-sm sm:text-[1rem] tracking-[0.15em] uppercase mb-6 sm:mb-8">Контакты</h4>
+          <h4 class="text-white/60 text-md sm:text-[1.25rem] tracking-[0.15em] uppercase mb-6 sm:mb-8">Контакты</h4>
 
           <div class="flex flex-col gap-5 sm:gap-6">
             <nuxt-link href="https://t.me/managebroke" target="_blank" class="flex items-center gap-4 group">
               <div
-                class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center group-hover:border-[#c19d60] transition-colors shrink-0"
+                class="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center group-hover:border-[#c19d60] transition-colors shrink-0"
               >
-                <TelegramIcon class="w-4 h-4 text-white/60 group-hover:text-[#c19d60]" />
+                <TelegramIcon class="w-6 h-6 text-white/60 group-hover:text-[#c19d60]" />
               </div>
               <div class="flex flex-col">
-                <span class="text-gray-300 text-sm">Telegram</span>
-                <span class="text-white/60 text-xs sm:text-[0.75rem]">@managebroke</span>
+                <span class="text-gray-300 text-md">Telegram</span>
+                <span class="text-white/60 text-sm sm:text-[0.75rem]">@managebroke</span>
               </div>
             </nuxt-link>
 
             <nuxt-link href="https://www.instagram.com/broke.optics" target="_blank" class="flex items-center gap-4 group">
               <div
-                class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center group-hover:border-[#c19d60] transition-colors shrink-0"
+                class="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center group-hover:border-[#c19d60] transition-colors shrink-0"
               >
-                <InstagramIcon class="w-4 h-4 text-white/60 group-hover:text-[#c19d60]" />
+                <InstagramIcon class="w-6 h-6 text-white/60 group-hover:text-[#c19d60]" />
               </div>
               <div class="flex flex-col">
-                <span class="text-gray-300 text-sm">Instagram</span>
-                <span class="text-white/60 text-xs sm:text-[0.75rem]">@broke.optics</span>
+                <span class="text-gray-300 text-md">Instagram</span>
+                <span class="text-white/60 text-sm sm:text-[0.75rem]">@broke.optics</span>
               </div>
             </nuxt-link>
 
             <nuxt-link href="#" target="_blank" class="flex items-center gap-4 group">
               <div
-                class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center group-hover:border-[#c19d60] transition-colors shrink-0"
+                class="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center group-hover:border-[#c19d60] transition-colors shrink-0"
               >
-                <AvitoIcon class="w-4 h-4 group-hover:text-[#c19d60]" />
+                <AvitoIcon class="w-6 h-6 group-hover:text-[#c19d60]" />
               </div>
               <div class="flex flex-col">
-                <span class="text-gray-300 text-sm">Avito</span>
-                <span class="text-white/60 text-xs sm:text-[0.75rem]">Broke Optics</span>
+                <span class="text-gray-300 text-md">Avito</span>
+                <span class="text-white/60 text-sm sm:text-[0.75rem]">Broke Optics</span>
               </div>
             </nuxt-link>
           </div>
         </div>
 
         <div class="flex flex-col pt-8 lg:pt-0 border-t lg:border-t-0 lg:border-l border-white/10 lg:px-8">
-          <h4 class="text-white/60 text-sm sm:text-[1rem] tracking-[0.15em] uppercase mb-6 sm:mb-8">Информация</h4>
+          <h4 class="text-white/60 text-md sm:text-[1.25rem] tracking-[0.15em] uppercase mb-6 sm:mb-8">Информация</h4>
           <ul class="flex flex-col gap-4 sm:gap-5">
             <li v-for="(link, index) in infoLinks" :key="index">
-              <nuxt-link :href="`#${link.link}`" class="text-white/60 text-sm sm:text-[0.875rem] hover:text-[#c19d60] transition-colors">{{
+              <nuxt-link :href="`#${link.link}`" class="text-white/60 max-sm:text-lg text-[1rem] hover:text-[#c19d60] transition-colors">{{
                 link.title
               }}</nuxt-link>
             </li>
@@ -118,12 +118,21 @@ const currentYear = new Date().getFullYear();
         </div>
 
         <div class="flex flex-col pt-8 lg:pt-0 border-t md:border-t-0 lg:border-l border-white/10 lg:px-8">
-          <h4 class="text-white/60 text-sm sm:text-[1rem] tracking-[0.15em] uppercase mb-6 sm:mb-8">Для клиентов</h4>
-          <ul class="flex flex-col gap-4 sm:gap-5">
+          <h4 class="text-white/60 text-md sm:text-[1.25rem] tracking-[0.15em] uppercase mb-6 sm:mb-8">Для клиентов</h4>
+
+          <ul class="flex flex-col gap-4 sm:gap-5 mb-8">
             <li v-for="link in clientLinks" :key="link">
-              <nuxt-link href="#" class="text-white/60 text-sm sm:text-[0.875rem] hover:text-[#c19d60] transition-colors">{{ link }}</nuxt-link>
+              <nuxt-link href="#" class="text-white/60 max-sm:text-lg text-[1rem] hover:text-[#c19d60] transition-colors">{{ link }}</nuxt-link>
             </li>
           </ul>
+
+          <nuxt-link href="#hero" class="mt-auto flex items-center text-white/50 hover:text-[#c19d60] transition-colors group w-fit">
+            <div class="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center group-hover:border-[#c19d60] transition-colors shrink-0">
+              <svg class="w-6 h-6 transition-transform group-hover:-translate-y-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+              </svg>
+            </div>
+          </nuxt-link>
         </div>
       </div>
 

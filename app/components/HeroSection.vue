@@ -4,7 +4,7 @@ import BaseLink from "./UI/BaseLink.vue";
 </script>
 
 <template>
-  <section class="relative min-h-dvh w-full overflow-hidden flex flex-col border-b border-white/10">
+  <section id="hero" class="relative min-h-dvh w-full overflow-hidden flex flex-col border-b border-white/10">
     <!-- Фоновая заглушка -->
     <div class="absolute inset-0 z-0 pointer-events-none"></div>
 
