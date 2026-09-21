@@ -84,7 +84,7 @@ const steps: { num: string; title: string; desc: string; image: string }[] = [
           <h3 class="text-white/80 text-base lg:text-[1rem] leading-snug mb-2 sm:mb-3 whitespace-pre-line">
             {{ step.title }}
           </h3>
-          <p class="text-white/60 text-sm lg:text-[0.875rem] leading-relaxed whitespace-pre-line">
+          <p class="text-white/60 text-md lg:text-[0.875rem] leading-relaxed whitespace-pre-line">
             {{ step.desc }}
           </p>
         </li>

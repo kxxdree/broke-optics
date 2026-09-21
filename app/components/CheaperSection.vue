@@ -86,8 +86,8 @@ const brokeOptics = [
                 <component :is="item.icon" class="text-white/60 w-6 h-6 sm:w-8 sm:h-8" />
               </div>
               <div class="grow pl-3 sm:pl-4">
-                <div class="text-xs sm:text-sm lg:text-md text-white/60 uppercase tracking-wide sm:tracking-widest mb-1">{{ item.title }}</div>
-                <div class="text-[0.85rem] sm:text-sm lg:text-sm text-white/60">{{ item.desc }}</div>
+                <div class="text-md lg:text-lg text-white/60 uppercase tracking-wide sm:tracking-widest mb-1">{{ item.title }}</div>
+                <div class="text-md text-white/60">{{ item.desc }}</div>
               </div>
               <div class="text-gray-600 text-sm shrink-0 pl-2">
                 <CloseIcon class="text-white/60 w-5 h-5 sm:w-6 sm:h-6" />
@@ -115,8 +115,8 @@ const brokeOptics = [
                 <component :is="item.icon" class="text-[#c19d60] w-6 h-6 sm:w-8 sm:h-8" />
               </div>
               <div class="grow pl-3 sm:pl-4">
-                <div class="text-xs sm:text-sm lg:text-md text-white/90 uppercase tracking-wide sm:tracking-widest mb-1">{{ item.title }}</div>
-                <div class="text-[0.85rem] sm:text-xs lg:text-sm text-white/90">{{ item.desc }}</div>
+                <div class="text-sm lg:text-lg text-white/90 uppercase tracking-wide sm:tracking-widest mb-1">{{ item.title }}</div>
+                <div class="text-md text-white/90">{{ item.desc }}</div>
               </div>
               <div class="text-[#c19d60] text-sm shrink-0 pl-2">
                 <CheckIcon class="text-[#c19d60] w-6 h-6 sm:w-8 sm:h-8" />

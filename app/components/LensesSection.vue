@@ -61,11 +61,11 @@ const cards: { num: string; title: string; desc: string; image: string }[] = [
           <div class="hidden lg:block w-8 h-px bg-[#c19d60]/50 mb-4 transition-all duration-300 group-hover:w-16 group-hover:bg-[#c19d60]"></div>
 
           <div class="flex-1 relative z-10 min-w-0">
-            <h3 class="text-white text-sm tracking-wider sm:tracking-widest uppercase mb-1 sm:mb-1.5 lg:mb-3 whitespace-pre-line leading-snug">
+            <h3 class="text-white text-md tracking-wider sm:tracking-widest uppercase mb-1 sm:mb-1.5 lg:mb-3 whitespace-pre-line leading-snug">
               {{ card.title }}
             </h3>
 
-            <p class="text-white/60 text-sm leading-relaxed">
+            <p class="text-white/60 text-md leading-relaxed">
               {{ card.desc }}
             </p>
           </div>
