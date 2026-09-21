@@ -31,6 +31,7 @@ const steps: { num: string; title: string; desc: string; image: string }[] = [
 
 <template>
   <section
+  id="how-it-works"
     class="relative w-full overflow-hidden pt-16 pb-8 sm:pt-20 sm:pb-12 lg:pt-24 lg:pb-16 border-b border-white/10"
   >
     <div

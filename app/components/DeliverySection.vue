@@ -32,16 +32,14 @@ const deliveryFeatures = [
 </script>
 
 <template>
-  <section class="relative w-full py-16 sm:py-20 lg:py-24 overflow-hidden border-b border-white/10">
+  <section id="delivery" class="relative w-full py-16 sm:py-20 lg:py-24 overflow-hidden border-b border-white/10">
     <!-- класс bg-[url('...')] с картинкой -->
     <div class="absolute top-0 right-0 z-0 pointer-events-none"></div>
 
     <div class="max-w-[1920px] mx-auto px-5 sm:px-10 lg:px-20 xl:px-28 relative z-10 flex flex-col gap-10 lg:gap-16">
       <div class="flex flex-col lg:flex-row gap-16 items-start">
         <div class="w-full flex flex-col">
-          <h2
-            class="text-3xl sm:text-4xl lg:text-5xl xl:text-[3.5rem] leading-tight uppercase mb-5 sm:mb-6 font-light tracking-wide sm:tracking-widest"
-          >
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl xl:text-[3.5rem] leading-tight uppercase mb-5 sm:mb-6 font-light tracking-wide sm:tracking-widest">
             Доставка <br />
             по всей России
           </h2>
@@ -58,10 +56,7 @@ const deliveryFeatures = [
               :key="index"
               class="bg-white/2 border border-white/10 rounded p-6 flex flex-col transition-colors hover:border-white/20 group"
             >
-              <component
-                :is="feat.icon"
-                class="w-8 h-8 text-[#c19d60] mb-5 sm:mb-6 transition-transform duration-300 group-hover:scale-110"
-              />
+              <component :is="feat.icon" class="w-8 h-8 text-[#c19d60] mb-5 sm:mb-6 transition-transform duration-300 group-hover:scale-110" />
 
               <h3 class="text-xs sm:text-sm text-white font-semibold uppercase tracking-widest mb-2 sm:mb-3 whitespace-pre-line">
                 {{ feat.title }}
@@ -87,9 +82,7 @@ const deliveryFeatures = [
 
         <div class="hidden lg:block w-px h-16 bg-[#c19d60]/50 shrink-0"></div>
 
-        <p class="text-white/80 text-sm lg:text-base text-center lg:text-left max-w-sm">
-          Мы упаковываем каждую оправу так, как будто это наша собственная
-        </p>
+        <p class="text-white/80 text-sm lg:text-base text-center lg:text-left max-w-sm">Мы упаковываем каждую оправу так, как будто это наша собственная</p>
 
         <BaseLink :url="'https://www.instagram.com/broke.optics'" class="w-full sm:w-auto justify-center mt-2 lg:mt-0 group">
           <span>Как мы упаковываем</span>

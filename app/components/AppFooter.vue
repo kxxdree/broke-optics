@@ -5,7 +5,32 @@ import AvitoIcon from "~/assets/icons/avito-icon.svg?component";
 
 import BaseLink from "./UI/BaseLink.vue";
 
-const infoLinks = ["Что мы делаем", "Почему у нас дешевле", "Как мы работаем", "Примеры работ", "Доставка", "Ответы на вопросы"];
+const infoLinks: { title: string; link: string }[] = [
+  {
+    title: "Что мы делаем",
+    link: "lenses",
+  },
+  {
+    title: "Почему у нас дешевле",
+    link: "cheaper",
+  },
+  {
+    title: "Как мы работаем",
+    link: "how-it-works",
+  },
+  {
+    title: "Примеры работ",
+    link: "examples",
+  },
+  {
+    title: "Доставка",
+    link: "delivery",
+  },
+  {
+    title: "Ответы на вопросы",
+    link: "faq",
+  },
+];
 
 const clientLinks = ["Как отправить оправу", "Гарантия", "Возврат и обмен", "Конфиденциальность"];
 </script>
@@ -82,8 +107,10 @@ const clientLinks = ["Как отправить оправу", "Гарантия
         <div class="flex flex-col pt-8 lg:pt-0 border-t lg:border-t-0 lg:border-l border-white/10 lg:px-8">
           <h4 class="text-white/60 text-sm sm:text-[1rem] tracking-[0.15em] uppercase mb-6 sm:mb-8">Информация</h4>
           <ul class="flex flex-col gap-4 sm:gap-5">
-            <li v-for="link in infoLinks" :key="link">
-              <nuxt-link href="#" class="text-white/60 text-sm sm:text-[0.875rem] hover:text-[#c19d60] transition-colors">{{ link }}</nuxt-link>
+            <li v-for="(link, index) in infoLinks" :key="index">
+              <nuxt-link :href="`#${link.link}`" class="text-white/60 text-sm sm:text-[0.875rem] hover:text-[#c19d60] transition-colors">{{
+                link.title
+              }}</nuxt-link>
             </li>
           </ul>
         </div>

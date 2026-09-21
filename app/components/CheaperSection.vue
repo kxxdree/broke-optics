@@ -31,7 +31,7 @@ const brokeOptics = [
 </script>
 
 <template>
-  <section class="relative w-full overflow-hidden py-16 sm:py-20 lg:py-24 border-b border-white/10">
+  <section id="cheaper" class="relative w-full overflow-hidden py-16 sm:py-20 lg:py-24 border-b border-white/10">
     <div
       class="absolute -top-32 -right-32 w-96 h-96 sm:w-137.5 sm:h-137.5 rounded-full bg-[radial-gradient(circle,rgba(255,255,255,0.12)_0%,rgba(255,255,255,0.04)_35%,transparent_70%)] blur-2xl pointer-events-none z-0"
     ></div>

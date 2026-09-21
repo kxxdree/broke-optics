@@ -28,7 +28,7 @@ const cards: { num: string; title: string; desc: string; image: string }[] = [
 </script>
 
 <template>
-  <section class="relative w-full overflow-hidden py-12 sm:py-16 lg:py-24 border-b border-white/10">
+  <section id="lenses" class="relative w-full overflow-hidden py-12 sm:py-16 lg:py-24 border-b border-white/10">
     <!-- Заглушка для фонового изображения секции -->
     <div class="absolute inset-0 z-0 pointer-events-none"></div>
 
