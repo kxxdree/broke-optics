@@ -46,7 +46,7 @@ const clientLinks = ["Как отправить оправу", "Гарантия
           <h4 class="text-white/60 text-sm sm:text-[1rem] tracking-[0.15em] uppercase mb-6 sm:mb-8">Контакты</h4>
 
           <div class="flex flex-col gap-5 sm:gap-6">
-            <a href="#" class="flex items-center gap-4 group">
+            <nuxt-link href="https://t.me/managebroke" target="_blank" class="flex items-center gap-4 group">
               <div
                 class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center group-hover:border-[#c19d60] transition-colors shrink-0"
               >
@@ -54,11 +54,11 @@ const clientLinks = ["Как отправить оправу", "Гарантия
               </div>
               <div class="flex flex-col">
                 <span class="text-gray-300 text-sm">Telegram</span>
-                <span class="text-white/60 text-xs sm:text-[0.75rem]">@broke_optics</span>
+                <span class="text-white/60 text-xs sm:text-[0.75rem]">@managebroke</span>
               </div>
-            </a>
+            </nuxt-link>
 
-            <a href="#" class="flex items-center gap-4 group">
+            <nuxt-link href="https://www.instagram.com/broke.optics" target="_blank" class="flex items-center gap-4 group">
               <div
                 class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center group-hover:border-[#c19d60] transition-colors shrink-0"
               >
@@ -66,11 +66,11 @@ const clientLinks = ["Как отправить оправу", "Гарантия
               </div>
               <div class="flex flex-col">
                 <span class="text-gray-300 text-sm">Instagram</span>
-                <span class="text-white/60 text-xs sm:text-[0.75rem]">@broke_optics</span>
+                <span class="text-white/60 text-xs sm:text-[0.75rem]">@broke.optics</span>
               </div>
-            </a>
+            </nuxt-link>
 
-            <a href="#" class="flex items-center gap-4 group">
+            <nuxt-link href="#" target="_blank" class="flex items-center gap-4 group">
               <div
                 class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center group-hover:border-[#c19d60] transition-colors shrink-0"
               >
@@ -80,7 +80,7 @@ const clientLinks = ["Как отправить оправу", "Гарантия
                 <span class="text-gray-300 text-sm">Avito</span>
                 <span class="text-white/60 text-xs sm:text-[0.75rem]">Broke Optics</span>
               </div>
-            </a>
+            </nuxt-link>
           </div>
 
           <div class="w-full h-px bg-white/10 my-6 sm:my-8"></div>
@@ -124,9 +124,7 @@ const clientLinks = ["Как отправить оправу", "Гарантия
         </div>
       </div>
 
-      <div
-        class="flex flex-col md:flex-row items-center justify-between gap-4 pt-6 sm:pt-8 border-t border-white/10 text-center md:text-left"
-      >
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4 pt-6 sm:pt-8 border-t border-white/10 text-center md:text-left">
         <div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-white/60 text-[10px] sm:text-[12px]">
           <span class="uppercase tracking-widest text-white/60">Broke Optics &copy; {{ new Date().getFullYear() }}</span>
 

@@ -68,7 +68,7 @@ const toggleItem = (index: number) => {
             <div class="grow flex flex-col">
               <div class="flex items-center justify-between w-full">
                 <h3
-                  class="text-xs sm:text-[13px] md:text-[14px] uppercase tracking-wide sm:tracking-widest pr-2 sm:pr-4 leading-snug"
+                  class="text-sm sm:text-[0.875rem] md:text-[1.25rem] uppercase tracking-wide sm:tracking-widest pr-2 sm:pr-4 leading-snug"
                   :class="activeIndex === index ? 'text-white' : 'text-gray-300'"
                 >
                   {{ faq.question }}
