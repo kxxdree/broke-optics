@@ -5,8 +5,10 @@ import BaseLink from "./UI/BaseLink.vue";
 
 <template>
   <section id="hero" class="relative min-h-dvh w-full overflow-hidden flex flex-col border-b border-white/10">
-    <!-- Фоновая заглушка -->
-    <div class="absolute inset-0 z-0 pointer-events-none"></div>
+    <div class="absolute inset-0 z-0 pointer-events-none">
+      <img src="/assets/images/bg-hero.jpg" alt="Фон оптики" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-black/91"></div>
+    </div>
 
     <div class="relative z-10 max-w-[1920px] mx-auto px-5 sm:px-10 lg:px-20 xl:px-28 pt-24 sm:pt-32 xl:pt-40 w-full">
       <h2 class="text-[#c19d60] text-xs sm:text-sm md:text-lg tracking-[0.2em] sm:tracking-[0.45em] uppercase mb-4 font-light">
