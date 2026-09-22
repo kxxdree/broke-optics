@@ -31,10 +31,10 @@ const brokeOptics = [
 </script>
 
 <template>
-  <section id="cheaper" class="relative w-full overflow-hidden py-16 sm:py-20 lg:py-24 border-b border-white/5">
+  <section id="cheaper" class="relative w-full overflow-hidden py-16 sm:py-20 lg:py-24 border-b border-white/1">
     <div class="absolute inset-0 z-0 pointer-events-none">
       <img src="/assets/images/bg-cheaper-section.jpg" alt="Фон оптики" class="w-full h-full object-cover" />
-      <div class="absolute inset-0 bg-black/91"></div>
+      <div class="absolute inset-0 max-sm:bg-black/83 lg:bg-black/91"></div>
     </div>
 
     <div

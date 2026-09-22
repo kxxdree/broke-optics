@@ -4,11 +4,15 @@ import { gallery } from "~/utils/gallery";
 </script>
 
 <template>
-  <section id="examples" class="relative w-full overflow-hidden pt-8 pb-16 sm:pb-20 lg:pb-24 border-b border-white/5">
+  <section id="examples" class="relative w-full overflow-hidden pt-8 pb-16 sm:pb-20 lg:pb-24">
     <div class="absolute inset-0 z-0 pointer-events-none">
       <img src="/assets/images/bg-abstraction.jpg" alt="Фон оптики" class="w-full h-full object-cover" />
       <div class="absolute inset-0 bg-black/91"></div>
     </div>
+
+    <div
+      class="max-sm:flex lg:hidden absolute -top-48 -left-40 w-96 h-96 sm:w-137.5 sm:h-137.5 rounded-full bg-[radial-gradient(circle,rgba(255,255,255,0.1)_0%,rgba(255,255,255,0.06)_10%,transparent_90%)] blur-3xl pointer-events-none z-0"
+    ></div>
 
     <div
       class="max-w-[1920px] mx-auto px-5 sm:px-10 lg:px-20 xl:px-28 flex flex-col lg:flex-row gap-10 lg:gap-16 items-stretch relative z-10"
