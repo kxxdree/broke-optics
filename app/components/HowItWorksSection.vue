@@ -32,12 +32,12 @@ const steps: { num: string; title: string; desc: string; image: string }[] = [
 <template>
   <section
     id="how-it-works"
-    class="relative w-full overflow-hidden pt-16 pb-8 sm:pt-20 sm:pb-12 lg:pt-24 lg:pb-16 border-b border-white/10"
+    class="relative w-full overflow-hidden pt-16 pb-8 sm:pt-20 sm:pb-12 lg:pt-24 lg:pb-16 "
   >
-    <!-- Декоративный свечение на фоне -->
-    <div
-      class="absolute -top-24 sm:-top-48 right-0 sm:right-24 w-96 h-96 sm:w-137.5 sm:h-137.5 rounded-full bg-[radial-gradient(circle,rgba(255,255,255,0.1)_0%,rgba(255,255,255,0.05)_35%,transparent_90%)] blur-3xl pointer-events-none z-0"
-    ></div>
+    <div class="absolute inset-0 z-0 pointer-events-none">
+      <img src="/assets/images/bg-abstraction.jpg" alt="Фон оптики" class="w-full h-full object-cover rotate-180" />
+      <div class="absolute inset-0 bg-black/91"></div>
+    </div>
 
     <div
       class="max-w-[1920px] mx-auto px-5 sm:px-10 lg:px-20 xl:px-28 flex flex-col lg:flex-row gap-12 lg:gap-16 items-stretch relative z-10"
