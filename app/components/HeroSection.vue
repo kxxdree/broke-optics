@@ -9,9 +9,13 @@ import BaseLink from "./UI/BaseLink.vue";
     <div class="absolute inset-0 z-0 pointer-events-none"></div>
 
     <div class="relative z-10 max-w-[1920px] mx-auto px-5 sm:px-10 lg:px-20 xl:px-28 pt-24 sm:pt-32 xl:pt-40 w-full">
-      <h2 class="text-[#c19d60] text-xs sm:text-sm md:text-md tracking-[0.2em] sm:tracking-[0.45em] uppercase mb-4 font-light">Оптика нового формата</h2>
+      <h2 class="text-[#c19d60] text-xs sm:text-sm md:text-lg tracking-[0.2em] sm:tracking-[0.45em] uppercase mb-4 font-light">
+        Оптика нового формата
+      </h2>
 
-      <h1 class="text-4xl sm:text-5xl md:text-6xl xl:text-[5rem] leading-tight sm:leading-none uppercase mb-6 sm:mb-8 font-light tracking-wide">
+      <h1
+        class="text-4xl sm:text-5xl md:text-6xl xl:text-[5rem] leading-tight sm:leading-none uppercase mb-6 sm:mb-8 font-light tracking-wide"
+      >
         Меняем линзы<br />
         в вашей оправе<br />
         без переплат
@@ -19,15 +23,15 @@ import BaseLink from "./UI/BaseLink.vue";
 
       <div class="w-12 sm:w-16 h-px bg-[#c19d60] mb-6"></div>
 
-      <p class="text-gray-300 text-base sm:text-lg leading-relaxed max-w-xl mb-8 sm:mb-10">
+      <p class="text-gray-300 text-base sm:text-xl leading-relaxed max-w-xl mb-8 sm:mb-10">
         Изготавливаем линзы по вашему рецепту для любых оправ - быстро, точно и дешевле сетевых оптик
       </p>
 
-      <div class="flex items-center flex-wrap gap-3 sm:gap-4 text-[0.65rem] sm:text-[0.75rem] text-white/60 uppercase tracking-widest mb-10 xl:mb-12">
+      <div class="flex items-center flex-wrap gap-3 sm:gap-4 max-sm:text-xs text-sm text-white/60 uppercase tracking-widest mb-10 xl:mb-12">
         <span>Прозрачные</span>
-        <span class="text-[#c19d60] text-[0.4rem] sm:text-[0.5rem]">●</span>
+        <span class="text-[#c19d60] text-md">●</span>
         <span>Фотохромные</span>
-        <span class="text-[#c19d60] text-[0.4rem] sm:text-[0.5rem]">●</span>
+        <span class="text-[#c19d60] text-md">●</span>
         <span>Тонированные</span>
       </div>
 

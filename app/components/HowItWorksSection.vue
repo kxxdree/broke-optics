@@ -31,7 +31,7 @@ const steps: { num: string; title: string; desc: string; image: string }[] = [
 
 <template>
   <section
-  id="how-it-works"
+    id="how-it-works"
     class="relative w-full overflow-hidden pt-16 pb-8 sm:pt-20 sm:pb-12 lg:pt-24 lg:pb-16 border-b border-white/10"
   >
     <div
@@ -50,7 +50,7 @@ const steps: { num: string; title: string; desc: string; image: string }[] = [
 
         <div class="w-10 sm:w-12 h-px bg-[#c19d60] mb-6 sm:mb-8"></div>
 
-        <p class="text-white/80 text-base sm:text-lg leading-relaxed xl:max-w-[20rem] mb-8 sm:mb-10 lg:mb-12">
+        <p class="text-white/80 text-md lg:text-xl leading-relaxed xl:max-w-[24rem] mb-8 sm:mb-10 lg:mb-12">
           Мы делаем процесс максимально простым и понятным для вас
         </p>
 
@@ -69,22 +69,16 @@ const steps: { num: string; title: string; desc: string; image: string }[] = [
             {{ step.num }}
           </span>
 
-          <div
-            class="w-8 h-px bg-[#c19d60]/50 mb-6 sm:mb-8 transition-all duration-300 group-hover:w-16 group-hover:bg-[#c19d60]"
-          ></div>
+          <div class="w-8 h-px bg-[#c19d60]/50 mb-6 sm:mb-8 transition-all duration-300 group-hover:w-16 group-hover:bg-[#c19d60]"></div>
 
           <div class="h-48 sm:h-40 lg:h-36 w-full mb-5 sm:mb-6 relative rounded flex overflow-hidden">
-            <img
-              :src="step.image"
-              alt=""
-              class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-            />
+            <img :src="step.image" alt="" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
           </div>
 
-          <h3 class="text-white/80 text-base lg:text-[1rem] leading-snug mb-2 sm:mb-3 whitespace-pre-line">
+          <h3 class="text-white/80 text-lg lg:text-[1.075rem] leading-snug mb-2 sm:mb-3 whitespace-pre-line">
             {{ step.title }}
           </h3>
-          <p class="text-white/60 text-md lg:text-[0.875rem] leading-relaxed whitespace-pre-line">
+          <p class="text-white/60 text-md lg:text-md leading-relaxed whitespace-pre-line">
             {{ step.desc }}
           </p>
         </li>

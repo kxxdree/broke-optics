@@ -51,7 +51,7 @@ const currentYear = new Date().getFullYear();
             <p class="text-[1rem] sm:text-[1.25rem] tracking-[0.4em] sm:tracking-[0.5em] text-white/60 text-center uppercase">Optics</p>
           </div>
 
-          <p class="text-white/80 text-sm sm:text-[1rem] leading-relaxed mb-8 max-w-sm">
+          <p class="text-white/80 text-center text-base lg:text-xl leading-relaxed mb-8">
             Премиальная оптика нового формата. <br />
             Изготавливаем линзы по вашему рецепту для любых оправ без переплат
           </p>
@@ -122,12 +122,16 @@ const currentYear = new Date().getFullYear();
 
           <ul class="flex flex-col gap-4 sm:gap-5 mb-8">
             <li v-for="link in clientLinks" :key="link">
-              <nuxt-link href="#" class="text-white/60 max-sm:text-lg text-[1rem] hover:text-[#c19d60] transition-colors">{{ link }}</nuxt-link>
+              <nuxt-link href="#" class="text-white/60 max-sm:text-lg text-[1rem] hover:text-[#c19d60] transition-colors">{{
+                link
+              }}</nuxt-link>
             </li>
           </ul>
 
           <nuxt-link href="#hero" class="mt-auto flex items-center text-white/50 hover:text-[#c19d60] transition-colors group w-fit">
-            <div class="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center group-hover:border-[#c19d60] transition-colors shrink-0">
+            <div
+              class="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center group-hover:border-[#c19d60] transition-colors shrink-0"
+            >
               <svg class="w-6 h-6 transition-transform group-hover:-translate-y-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 10l7-7m0 0l7 7m-7-7v18" />
               </svg>
@@ -136,7 +140,9 @@ const currentYear = new Date().getFullYear();
         </div>
       </div>
 
-      <div class="flex flex-col md:flex-row items-center justify-between gap-4 pt-6 sm:pt-8 border-t border-white/10 text-center md:text-left">
+      <div
+        class="flex flex-col md:flex-row items-center justify-between gap-4 pt-6 sm:pt-8 border-t border-white/10 text-center md:text-left"
+      >
         <div class="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-white/60 text-[0.75rem] sm:text-[0.875rem]">
           <span class="uppercase tracking-widest text-white/60">Broke Optics &copy; {{ currentYear }}</span>
 

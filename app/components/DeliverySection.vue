@@ -39,14 +39,16 @@ const deliveryFeatures = [
     <div class="max-w-[1920px] mx-auto px-5 sm:px-10 lg:px-20 xl:px-28 relative z-10 flex flex-col gap-10 lg:gap-16">
       <div class="flex flex-col lg:flex-row gap-16 items-start">
         <div class="w-full flex flex-col">
-          <h2 class="text-3xl sm:text-4xl lg:text-5xl xl:text-[3.5rem] leading-tight uppercase mb-5 sm:mb-6 font-light tracking-wide sm:tracking-widest">
+          <h2
+            class="text-3xl sm:text-4xl lg:text-5xl xl:text-[3.5rem] leading-tight uppercase mb-5 sm:mb-6 font-light tracking-wide sm:tracking-widest"
+          >
             Доставка <br />
             по всей России
           </h2>
 
           <div class="w-10 sm:w-12 h-px bg-[#c19d60] mb-5 sm:mb-6"></div>
 
-          <p class="text-gray-300 text-base sm:text-lg leading-relaxed max-w-xl mb-10 lg:mb-12">
+          <p class="text-gray-300 text-md lg:text-xl leading-relaxed max-w-lg mb-10 lg:mb-12">
             Берём на себя все заботы по доставке. Ваша оправа будет в полной безопасности
           </p>
 
@@ -56,13 +58,16 @@ const deliveryFeatures = [
               :key="index"
               class="bg-white/2 border border-white/10 rounded p-6 flex flex-col transition-colors hover:border-white/20 group"
             >
-              <component :is="feat.icon" class="w-8 h-8 text-[#c19d60] mb-5 sm:mb-6 transition-transform duration-300 group-hover:scale-110" />
+              <component
+                :is="feat.icon"
+                class="w-8 h-8 text-[#c19d60] mb-5 sm:mb-6 transition-transform duration-300 group-hover:scale-110"
+              />
 
-              <h3 class="text-xs sm:text-sm text-white font-semibold uppercase tracking-widest mb-2 sm:mb-3 whitespace-pre-line">
+              <h3 class="max-sm:text-sm text-white font-semibold uppercase tracking-widest mb-2 sm:mb-3 whitespace-pre-line">
                 {{ feat.title }}
               </h3>
 
-              <p class="text-xs sm:text-[0.875rem] text-white/80 leading-relaxed whitespace-pre-line">
+              <p class="text-sm text-white/80 leading-relaxed whitespace-pre-line">
                 {{ feat.desc }}
               </p>
             </li>
@@ -75,14 +80,16 @@ const deliveryFeatures = [
       >
         <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 shrink-0 w-full lg:w-auto text-center sm:text-left">
           <ShieldIcon class="w-10 h-10 sm:w-12 sm:h-12 text-[#c19d60] shrink-0" />
-          <h3 class="text-base sm:text-lg lg:text-[22px] uppercase tracking-wide sm:tracking-widest font-light">
+          <h3 class="text-[1.25rem] uppercase tracking-wide sm:tracking-widest font-light">
             Ваша оправа - <br class="hidden sm:block" />наша ответственность
           </h3>
         </div>
 
         <div class="hidden lg:block w-px h-16 bg-[#c19d60]/50 shrink-0"></div>
 
-        <p class="text-white/80 text-sm lg:text-base text-center lg:text-left max-w-sm">Мы упаковываем каждую оправу так, как будто это наша собственная</p>
+        <p class="text-white/80 text-base lg:text-lg text-center lg:text-left max-w-sm">
+          Мы упаковываем каждую оправу так, как будто это наша собственная
+        </p>
 
         <BaseLink :url="'https://www.instagram.com/broke.optics'" class="w-full sm:w-auto justify-center mt-2 lg:mt-0 group">
           <span>Как мы упаковываем</span>

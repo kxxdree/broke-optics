@@ -36,16 +36,20 @@ const brokeOptics = [
       class="absolute -top-32 -right-32 w-96 h-96 sm:w-137.5 sm:h-137.5 rounded-full bg-[radial-gradient(circle,rgba(255,255,255,0.12)_0%,rgba(255,255,255,0.04)_35%,transparent_70%)] blur-2xl pointer-events-none z-0"
     ></div>
 
-    <div class="max-w-[1920px] mx-auto px-5 sm:px-10 lg:px-20 xl:px-28 flex flex-col lg:flex-row gap-12 lg:gap-16 items-stretch relative z-10">
+    <div
+      class="max-w-[1920px] mx-auto px-5 sm:px-10 lg:px-20 xl:px-28 flex flex-col lg:flex-row gap-12 lg:gap-16 items-stretch relative z-10"
+    >
       <div class="w-full lg:w-[45%] xl:w-[40%] flex flex-col">
-        <h2 class="text-3xl sm:text-4xl lg:text-5xl xl:text-[3.5rem] leading-tight uppercase mb-5 sm:mb-6 font-light tracking-wide sm:tracking-widest">
+        <h2
+          class="text-3xl sm:text-4xl lg:text-5xl xl:text-[3.5rem] leading-tight uppercase mb-5 sm:mb-6 font-light tracking-wide sm:tracking-widest"
+        >
           Почему<br />
           у нас дешевле
         </h2>
 
         <div class="w-10 sm:w-12 h-px bg-[#c19d60] mb-5 sm:mb-6"></div>
 
-        <p class="text-white/80 text-base sm:text-lg leading-relaxed max-w-sm mb-10 lg:mb-16">
+        <p class="text-white/80 text-md lg:text-xl leading-relaxed max-w-sm mb-10 lg:mb-16">
           Без салонов. Без продавцов.<br />
           Без переплат за витрины
           <br /><br />
@@ -61,7 +65,9 @@ const brokeOptics = [
           >
             - 40%
           </span>
-          <p class="text-white/60 text-sm sm:text-base xl:text-[1.125rem] tracking-[0.2em] sm:tracking-[0.3em] uppercase leading-relaxed mt-2 sm:mt-0">
+          <p
+            class="text-white/60 text-sm sm:text-base xl:text-[1.125rem] tracking-[0.2em] sm:tracking-[0.3em] uppercase leading-relaxed mt-2 sm:mt-0"
+          >
             От стоимости<br />
             сетевых оптик
           </p>
@@ -76,12 +82,20 @@ const brokeOptics = [
             <StoreIcon class="text-white/60 w-8 h-8 sm:w-10 sm:h-10" />
           </div>
 
-          <div class="absolute top-0 left-0 right-0 h-32 bg-linear-to-b from-white/5 to-transparent z-0 rounded-t pointer-events-none"></div>
+          <div
+            class="absolute top-0 left-0 right-0 h-32 bg-linear-to-b from-white/5 to-transparent z-0 rounded-t pointer-events-none"
+          ></div>
 
-          <h3 class="text-center text-white/60 uppercase tracking-[0.15em] text-sm sm:text-md mb-4 sm:mb-6 relative z-10 shrink-0">Обычная оптика</h3>
+          <h3 class="text-center text-white/60 uppercase tracking-[0.15em] text-sm sm:text-md mb-4 sm:mb-6 relative z-10 shrink-0">
+            Обычная оптика
+          </h3>
 
           <ul class="px-4 sm:px-6 pb-6 relative z-10 grow flex flex-col justify-between">
-            <li v-for="(item, index) in regularOptics" :key="index" class="flex items-center py-3 sm:py-4 border-b border-white/5 last:border-b-0">
+            <li
+              v-for="(item, index) in regularOptics"
+              :key="index"
+              class="flex items-center py-3 sm:py-4 border-b border-white/5 last:border-b-0"
+            >
               <div class="w-8 sm:w-10 shrink-0 text-gray-600 flex justify-center">
                 <component :is="item.icon" class="text-white/60 w-6 h-6 sm:w-8 sm:h-8" />
               </div>
@@ -105,12 +119,20 @@ const brokeOptics = [
             <div class="w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center text-[#c19d60] text-2xl sm:text-3xl font-serif">B</div>
           </div>
 
-          <div class="absolute top-0 left-0 right-0 h-32 bg-linear-to-b from-[#c19d60]/10 to-transparent z-0 rounded-t pointer-events-none"></div>
+          <div
+            class="absolute top-0 left-0 right-0 h-32 bg-linear-to-b from-[#c19d60]/10 to-transparent z-0 rounded-t pointer-events-none"
+          ></div>
 
-          <h3 class="text-center text-[#c19d60] uppercase tracking-[0.15em] text-sm sm:text-md mb-4 sm:mb-6 relative z-10 shrink-0">Broke Optics</h3>
+          <h3 class="text-center text-[#c19d60] uppercase tracking-[0.15em] text-sm sm:text-md mb-4 sm:mb-6 relative z-10 shrink-0">
+            Broke Optics
+          </h3>
 
           <ul class="px-4 sm:px-6 pb-6 relative z-10 grow flex flex-col justify-between">
-            <li v-for="(item, index) in brokeOptics" :key="index" class="flex items-center py-3 sm:py-4 border-b border-white/5 last:border-b-0">
+            <li
+              v-for="(item, index) in brokeOptics"
+              :key="index"
+              class="flex items-center py-3 sm:py-4 border-b border-white/5 last:border-b-0"
+            >
               <div class="w-8 sm:w-10 shrink-0 text-[#c19d60] flex justify-center">
                 <component :is="item.icon" class="text-[#c19d60] w-6 h-6 sm:w-8 sm:h-8" />
               </div>

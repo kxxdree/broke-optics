@@ -34,14 +34,16 @@ const cards: { num: string; title: string; desc: string; image: string }[] = [
 
     <div class="max-w-[1920px] mx-auto px-5 sm:px-10 lg:px-20 xl:px-28 relative z-10">
       <div class="mb-8 sm:mb-12">
-        <h2 class="text-3xl sm:text-4xl lg:text-5xl xl:text-[3.5rem] leading-tight uppercase mb-4 sm:mb-6 font-light tracking-wide sm:tracking-widest">
+        <h2
+          class="text-3xl sm:text-4xl lg:text-5xl xl:text-[3.5rem] leading-tight uppercase mb-4 sm:mb-6 font-light tracking-wide sm:tracking-widest"
+        >
           Изготавливаем<br />
           линзы для вашей оправы
         </h2>
 
         <div class="w-10 sm:w-12 h-px bg-[#c19d60] mb-4 sm:mb-6"></div>
 
-        <p class="text-white/80 text-sm sm:text-base lg:text-lg leading-relaxed max-w-lg">
+        <p class="text-white/80 text-md lg:text-xl leading-relaxed max-w-xl">
           Работаем с любыми оправами - от повседневных до luxury моделей. Подбираем линзы по рецепту и вашим потребностям
         </p>
       </div>
@@ -58,10 +60,14 @@ const cards: { num: string; title: string; desc: string; image: string }[] = [
             </span>
           </div>
 
-          <div class="hidden lg:block w-8 h-px bg-[#c19d60]/50 mb-4 transition-all duration-300 group-hover:w-16 group-hover:bg-[#c19d60]"></div>
+          <div
+            class="hidden lg:block w-8 h-px bg-[#c19d60]/50 mb-4 transition-all duration-300 group-hover:w-16 group-hover:bg-[#c19d60]"
+          ></div>
 
           <div class="flex-1 relative z-10 min-w-0">
-            <h3 class="text-white text-md tracking-wider sm:tracking-widest uppercase mb-1 sm:mb-1.5 lg:mb-3 whitespace-pre-line leading-snug">
+            <h3
+              class="text-white text-md tracking-wider sm:tracking-widest uppercase mb-1 sm:mb-1.5 lg:mb-3 whitespace-pre-line leading-snug"
+            >
               {{ card.title }}
             </h3>
 
