@@ -4,7 +4,7 @@ import { gallery } from "~/utils/gallery";
 </script>
 
 <template>
-  <section id="examples" class="relative w-full overflow-hidden pt-8 pb-16 sm:pb-20 lg:pb-24 border-b border-white/10">
+  <section id="examples" class="relative w-full overflow-hidden pt-8 pb-16 sm:pb-20 lg:pb-24 ">
     <div
       class="max-w-[1920px] mx-auto px-5 sm:px-10 lg:px-20 xl:px-28 flex flex-col lg:flex-row gap-10 lg:gap-16 items-stretch relative z-10"
     >

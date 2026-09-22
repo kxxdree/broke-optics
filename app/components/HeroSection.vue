@@ -4,7 +4,7 @@ import BaseLink from "./UI/BaseLink.vue";
 </script>
 
 <template>
-  <section id="hero" class="relative min-h-dvh w-full overflow-hidden flex flex-col border-b border-white/10">
+  <section id="hero" class="relative min-h-dvh w-full overflow-hidden flex flex-col">
     <div class="absolute inset-0 z-0 pointer-events-none">
       <img src="/assets/images/bg-hero.jpg" alt="Фон оптики" class="w-full h-full object-cover" />
       <div class="absolute inset-0 bg-black/91"></div>

@@ -32,9 +32,11 @@ const deliveryFeatures = [
 </script>
 
 <template>
-  <section id="delivery" class="relative w-full py-16 sm:py-20 lg:py-24 overflow-hidden border-b border-white/10">
-    <!-- класс bg-[url('...')] с картинкой -->
-    <div class="absolute top-0 right-0 z-0 pointer-events-none"></div>
+  <section id="delivery" class="relative w-full py-16 sm:py-20 lg:py-24 overflow-hidden">
+    <div class="absolute inset-0 z-0 pointer-events-none">
+      <img src="/assets/images/bg-delivery.jpg" alt="Фон оптики" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-black/91"></div>
+    </div>
 
     <div class="max-w-[1920px] mx-auto px-5 sm:px-10 lg:px-20 xl:px-28 relative z-10 flex flex-col gap-10 lg:gap-16">
       <div class="flex flex-col lg:flex-row gap-16 items-start">
@@ -56,7 +58,7 @@ const deliveryFeatures = [
             <li
               v-for="(feat, index) in deliveryFeatures"
               :key="index"
-              class="bg-white/2 border border-white/10 rounded p-6 flex flex-col transition-colors hover:border-white/20 group"
+              class="bg-black/80 border border-white/10 rounded p-6 flex flex-col transition-colors hover:border-white/20 group"
             >
               <component
                 :is="feat.icon"
@@ -76,7 +78,7 @@ const deliveryFeatures = [
       </div>
 
       <div
-        class="w-full bg-white/2 border border-white/10 rounded-lg py-8 px-5 sm:px-8 lg:px-12 flex flex-col lg:flex-row items-center gap-6 lg:gap-8 justify-between"
+        class="w-full bg-black/80 border border-white/10 rounded-lg py-8 px-5 sm:px-8 lg:px-12 flex flex-col lg:flex-row items-center gap-6 lg:gap-8 justify-between"
       >
         <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 shrink-0 w-full lg:w-auto text-center sm:text-left">
           <ShieldIcon class="w-10 h-10 sm:w-12 sm:h-12 text-[#c19d60] shrink-0" />

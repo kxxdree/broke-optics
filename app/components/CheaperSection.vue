@@ -31,10 +31,11 @@ const brokeOptics = [
 </script>
 
 <template>
-  <section id="cheaper" class="relative w-full overflow-hidden py-16 sm:py-20 lg:py-24 border-b border-white/10">
-    <div
-      class="absolute -top-32 -right-32 w-96 h-96 sm:w-137.5 sm:h-137.5 rounded-full bg-[radial-gradient(circle,rgba(255,255,255,0.12)_0%,rgba(255,255,255,0.04)_35%,transparent_70%)] blur-2xl pointer-events-none z-0"
-    ></div>
+  <section id="cheaper" class="relative w-full overflow-hidden py-16 sm:py-20 lg:py-24">
+    <div class="absolute inset-0 z-0 pointer-events-none">
+      <img src="/assets/images/bg-cheaper-section.jpg" alt="Фон оптики" class="w-full h-full object-cover" />
+      <div class="absolute inset-0 bg-black/91"></div>
+    </div>
 
     <div
       class="max-w-[1920px] mx-auto px-5 sm:px-10 lg:px-20 xl:px-28 flex flex-col lg:flex-row gap-12 lg:gap-16 items-stretch relative z-10"
@@ -75,7 +76,7 @@ const brokeOptics = [
       </div>
 
       <div class="w-full xl:flex-1 grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-16 md:gap-y-6 pt-10 lg:pt-0">
-        <div class="relative bg-white/2 border border-white/10 rounded pt-12 sm:pt-16 flex flex-col overflow-visible h-full">
+        <div class="relative bg-black/80 border border-white/10 rounded pt-12 sm:pt-16 flex flex-col overflow-visible h-full">
           <div
             class="absolute -top-8 left-1/2 -translate-x-1/2 w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#111] border border-white/10 flex items-center justify-center z-20"
           >
