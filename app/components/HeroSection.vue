@@ -29,7 +29,7 @@ import BaseLink from "./UI/BaseLink.vue";
         Изготавливаем линзы по вашему рецепту для любых оправ - быстро, точно и дешевле сетевых оптик
       </p>
 
-      <div class="flex items-center flex-wrap gap-3 sm:gap-4 max-sm:text-xs text-sm text-white/60 uppercase tracking-widest mb-10 xl:mb-12">
+      <div class="flex items-center flex-wrap gap-3 sm:gap-4 max-sm:text-xs text-[0.95rem] text-white/60 uppercase tracking-widest mb-10 xl:mb-12">
         <span>Прозрачные</span>
         <span class="text-[#c19d60] text-md">●</span>
         <span>Фотохромные</span>
